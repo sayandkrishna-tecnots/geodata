@@ -11,6 +11,43 @@ Two versions are tracked separately and both matter:
 
 ### Added
 
+- **npm package `geodata-js`** (`packages/js`) — the dataset as a
+  zero-dependency, dual-format (ESM + CJS) package with per-subpath TypeScript
+  declarations, generated from `data/canonical` by `scripts/build_js.py`. Types
+  come from `schema/*.schema.json`, so no field is hand-transcribed on the JS
+  side. Verified with publint, `arethetypeswrong` across all four consumer
+  resolution modes, and an install-from-tarball smoke test covering ESM, CJS
+  and a TypeScript consumer under `moduleResolution: node16`.
+- **Subpath exports carry the size story.** Cities are 4.7 MB gzipped and are
+  structurally unreachable from the root entry rather than tree-shaken out of
+  it: `geodata-js` is countries + languages (55 KB gz) with an async
+  `statesOf`; `geodata-js/states`, `/cities`, `/translations`, `/country/<iso2>`
+  and `/normalize` each cost only what they contain. `geodata-js/cities`
+  additionally resolves to a throwing stub under the `browser` condition.
+- **`geodata-js/lazy`** — async per-country `citiesOf` / `searchCities` /
+  `loadCountry`, deliberately *not* in the root entry. A bundler emits a chunk
+  file for every `import()` it can see during scanning, before it knows whether
+  the surrounding code is reachable, so an unused `citiesOf` in the root entry
+  still emitted 48 MB of city chunks into `.next/static` for a Next.js client
+  component that used nothing but `statesOf`. Splitting the chunk maps into
+  separate modules did not help — the import sites were still reachable. Moving
+  the city loaders out of the root entry's graph brought the same app to
+  3.7 MB with First Load JS unchanged. `examples/nextjs` is the regression test.
+- **Cross-language conformance suite** — `scripts/build_conformance.py` derives
+  258 cases from `data/canonical` and both SDKs run the identical file
+  (`tests/test_conformance.py`, `packages/js/test/conformance.test.ts`).
+  Expectations come from the NDJSON rather than from either implementation, so
+  a case cannot pass by both languages being wrong in the same way.
+- **`geodata.__version__` / `DATASET_VERSION` / `SOURCE_TAG` / `COUNTS`**
+  (`src/geodata/_version.py`), read from `data/RELEASE.json`. The npm package
+  reports the same values, which is what makes "one dataset version across
+  every artifact" checkable rather than aspirational.
+- CI: `.github/workflows/js.yml` (Node 18/20/22/24, plus a job that regenerates
+  the JS data modules and diffs them to prove the package matches the committed
+  dataset) and `js-release.yml` (tag `js-v*` → gate → `npm publish
+  --provenance`, with the tag asserted against `package.json`).
+- `make js`, `js-build`, `js-test`, `js-pack`, `js-publish-dry`, `conformance`.
+
 - **Language table** — `data/canonical/languages.ndjson`, 420 ISO 639 rows
   (184 two-letter 639-1 codes, 236 three-letter 639-2 codes) built from the
   committed `data/vendor/languages.json`. This is the first table that does not

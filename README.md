@@ -1,7 +1,8 @@
 # geodata
 
 Countries, subdivisions and cities as a versioned, validated dataset — plus a
-Python query API over it.
+Python query API and an npm package over it, both built from the same canonical
+tables and checked against each other.
 
 ```
 250 countries · 5,308 subdivisions · 152,970 cities · 420 languages
@@ -47,6 +48,33 @@ geodata.translations_of(geodata.get_country("DE"))               # {'fr': ..., '
 Cities load lazily: importing the package and querying countries or states
 never reads the 41 MB cities table.
 
+### JavaScript / TypeScript
+
+The same dataset ships as [`geodata-js`](packages/js) — zero dependencies, ESM
+and CJS, typed, and usable from Node, Next.js, Vite, Bun, Deno and React Native.
+
+```ts
+import { getCountry, statesOf } from "geodata-js";
+import { citiesOf } from "geodata-js/cities";           // server: sync
+import { localizedName } from "geodata-js/translations";
+
+getCountry("NG").name;               // "Nigeria"
+await statesOf("GB", { depth: 1 });  // one country's subdivisions, lazily
+citiesOf("NG", { state: "NG-LA" });
+```
+
+Subpaths carry the size story: the root entry is 55 KB gzipped and cannot reach
+the 4.7 MB cities table — structurally, not by tree-shaking. See
+[`packages/js/README.md`](packages/js/README.md) for the full entry-point table
+and the Next.js recipe.
+
+**The two SDKs are held together, not merely written alike.** They share one
+dataset version, one name-normalization fold (`packages/js/test/normalize.test.ts`
+runs the fixture CPython produced), and one conformance corpus: 258 cases
+derived from `data/canonical` in `tests/conformance/cases.json`, run by both
+`pytest` and `vitest`. A query that resolves differently in the two languages
+fails CI.
+
 ## Layout
 
 | path | what |
@@ -60,7 +88,10 @@ never reads the 41 MB cities table.
 | `data/remap/<from>-<to>.ndjson` | id remap table for already-seeded consumers |
 | `schema/*.schema.json` | the contract |
 | `scripts/` | fetch → build → validate → churn → release |
-| `src/geodata/` | the query API, plus the optional Django app |
+| `src/geodata/` | the Python query API, plus the optional Django app |
+| `packages/js/` | the npm package, generated from `data/canonical` |
+| `examples/nextjs/` | cascading country → subdivision → city picker; its build is the bundler regression test |
+| `tests/conformance/cases.json` | the shared JS/Python corpus |
 | `docs/MIGRATION.md` | how to upgrade a populated database without corrupting it |
 | `docs/RELEASING.md` | the release checklist |
 
