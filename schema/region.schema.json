@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geodata.local/schema/region.schema.json",
+  "title": "Region",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "normalized_name"],
+  "properties": {
+    "id": {"type": "integer", "minimum": 1},
+    "name": {"type": "string", "minLength": 1},
+    "normalized_name": {"type": "string", "minLength": 1},
+    "wikidata_id": {"type": ["string", "null"], "pattern": "^Q[0-9]+$"}
+  }
+}

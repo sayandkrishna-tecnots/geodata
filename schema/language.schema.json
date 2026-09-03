@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geodata.local/schema/language.schema.json",
+  "title": "Language",
+  "description": "An ISO 639 language. Unlike every other table here there is no upstream integer id -- the code is the identity, so stable_key == code and a refresh can never renumber it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["code", "name", "normalized_name", "standard", "stable_key"],
+  "properties": {
+    "code": {"type": "string", "pattern": "^[a-z]{2,3}$"},
+    "name": {"type": "string", "minLength": 1},
+    "normalized_name": {"type": "string", "minLength": 1},
+    "standard": {"enum": ["iso639_1", "iso639_2"]},
+    "stable_key": {"type": "string", "pattern": "^[a-z]{2,3}$"}
+  }
+}

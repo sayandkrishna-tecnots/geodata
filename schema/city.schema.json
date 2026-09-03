@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geodata.local/schema/city.schema.json",
+  "title": "City",
+  "description": "One populated place, with explicit foreign keys rather than nesting (issue 11).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "state_id", "country_id", "country_iso2", "name", "normalized_name", "stable_key"],
+  "properties": {
+    "id": {"type": "integer", "minimum": 1},
+    "state_id": {"type": "integer", "minimum": 1},
+    "country_id": {"type": "integer", "minimum": 1},
+    "country_iso2": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "state_code": {"type": ["string", "null"]},
+    "state_iso3166_2": {"type": ["string", "null"]},
+    "name": {"type": "string", "minLength": 1},
+    "normalized_name": {"type": "string", "minLength": 1},
+    "latitude": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+    "longitude": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+    "timezone": {"type": ["string", "null"]},
+    "stable_key": {"type": "string", "description": "<state stable_key>/<normalized name>, with a #n suffix when a state has repeats."}
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "_note": "Conformance fixture: the JS build must reproduce these exactly. Covers Latin, Cyrillic, Greek, Arabic and CJK, because the fold is script-preserving rather than transliterating.",
+  "normalize_name": [
+    {
+      "in": "Saint-Étienne",
+      "out": "saint etienne"
+    },
+    {
+      "in": "São Paulo",
+      "out": "sao paulo"
+    },
+    {
+      "in": "Ürümqi",
+      "out": "urumqi"
+    },
+    {
+      "in": "N'Djamena",
+      "out": "n djamena"
+    },
+    {
+      "in": "Washington, D.C.",
+      "out": "washington d c"
+    },
+    {
+      "in": "Al-Ḥudaydah",
+      "out": "al hudaydah"
+    },
+    {
+      "in": "Sainte‐Anne",
+      "out": "sainte anne"
+    },
+    {
+      "in": "  Lagos  ",
+      "out": "lagos"
+    },
+    {
+      "in": "Ho Chi Minh City",
+      "out": "ho chi minh city"
+    },
+    {
+      "in": "İstanbul",
+      "out": "istanbul"
+    },
+    {
+      "in": "Kraków",
+      "out": "krakow"
+    },
+    {
+      "in": "Nizhniy Novgorod",
+      "out": "nizhniy novgorod"
+    },
+    {
+      "in": "L'Aquila",
+      "out": "l aquila"
+    },
+    {
+      "in": "Coeur d'Alene",
+      "out": "coeur d alene"
+    },
+    {
+      "in": "St. John's",
+      "out": "st john s"
+    },
+    {
+      "in": "Ōsaka",
+      "out": "osaka"
+    },
+    {
+      "in": "Reykjavík",
+      "out": "reykjavik"
+    },
+    {
+      "in": "Bratislava-Staré Mesto",
+      "out": "bratislava stare mesto"
+    },
+    {
+      "in": "Frankfurt am Main",
+      "out": "frankfurt am main"
+    },
+    {
+      "in": "Aix-en-Provence",
+      "out": "aix en provence"
+    },
+    {
+      "in": "München",
+      "out": "munchen"
+    },
+    {
+      "in": "Ciudad de México",
+      "out": "ciudad de mexico"
+    },
+    {
+      "in": "Đà Nẵng",
+      "out": "đa nang"
+    },
+    {
+      "in": "Θεσσαλονίκη",
+      "out": "θεσσαλονικη"
+    },
+    {
+      "in": "Москва",
+      "out": "москва"
+    },
+    {
+      "in": "北京",
+      "out": "北京"
+    },
+    {
+      "in": "",
+      "out": ""
+    },
+    {
+      "in": "---",
+      "out": ""
+    },
+    {
+      "in": "A  B",
+      "out": "a b"
+    },
+    {
+      "in": "Île-de-France",
+      "out": "ile de france"
+    }
+  ],
+  "normalize_key": [
+    {
+      "in": "GB-BIR",
+      "out": "gbbir"
+    },
+    {
+      "in": "gb bir",
+      "out": "gbbir"
+    },
+    {
+      "in": "US-CA",
+      "out": "usca"
+    },
+    {
+      "in": "  ng  ",
+      "out": "ng"
+    },
+    {
+      "in": "FR-75",
+      "out": "fr75"
+    },
+    {
+      "in": "",
+      "out": ""
+    },
+    {
+      "in": "XK",
+      "out": "xk"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geodata.local/schema/country.schema.json",
+  "title": "Country",
+  "description": "One ISO 3166-1 country or dependent territory. One JSON object per line in data/canonical/countries.ndjson.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "iso2", "name", "normalized_name", "stable_key"],
+  "properties": {
+    "id": {"type": "integer", "minimum": 1, "description": "Upstream integer id. Carried for compatibility; NOT the identity -- see stable_key."},
+    "iso2": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "iso3": {"type": ["string", "null"], "pattern": "^[A-Z]{3}$"},
+    "numeric_code": {"type": ["string", "null"], "pattern": "^[0-9]{1,3}$"},
+    "name": {"type": "string", "minLength": 1},
+    "normalized_name": {"type": "string", "minLength": 1},
+    "native": {"type": ["string", "null"]},
+    "capital": {"type": ["string", "null"]},
+    "phone_code": {"type": ["string", "null"], "description": "Upstream field name is `phonecode` (issue 10)."},
+    "currency": {"type": ["string", "null"], "pattern": "^[A-Z]{3}$"},
+    "currency_name": {"type": ["string", "null"]},
+    "currency_symbol": {"type": ["string", "null"]},
+    "tld": {"type": ["string", "null"]},
+    "region": {"type": ["string", "null"]},
+    "region_id": {"type": ["integer", "null"]},
+    "subregion": {"type": ["string", "null"]},
+    "subregion_id": {"type": ["integer", "null"]},
+    "nationality": {"type": ["string", "null"]},
+    "population": {"type": ["integer", "null"], "minimum": 0},
+    "gdp": {"type": ["integer", "null"]},
+    "area_sq_km": {"type": ["integer", "null"], "minimum": 0},
+    "postal_code_format": {"type": ["string", "null"]},
+    "postal_code_regex": {"type": ["string", "null"]},
+    "latitude": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+    "longitude": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+    "emoji": {"type": ["string", "null"]},
+    "emoji_unicode": {"type": ["string", "null"]},
+    "wikidata_id": {"type": ["string", "null"], "pattern": "^Q[0-9]+$"},
+    "timezones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "zone_name": {"type": ["string", "null"]},
+          "gmt_offset": {"type": ["integer", "null"]},
+          "gmt_offset_name": {"type": ["string", "null"]},
+          "abbreviation": {"type": ["string", "null"]},
+          "tz_name": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "stable_key": {"type": "string", "pattern": "^[A-Z]{2}$", "description": "Decision 2: iso2 is the country identity."},
+    "also_subdivision_of": {
+      "description": "Decision 3: territories ISO 3166 lists at both levels. Null for the vast majority.",
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["country_iso2", "state_id"],
+          "properties": {
+            "country_iso2": {"type": "string", "pattern": "^[A-Z]{2}$"},
+            "state_id": {"type": "integer"},
+            "state_stable_key": {"type": "string"},
+            "iso3166_2": {"type": ["string", "null"]},
+            "type": {"type": ["string", "null"]}
+          }
+        }
+      ]
+    },
+    "state_count": {"type": "integer", "minimum": 0},
+    "city_count": {"type": "integer", "minimum": 0},
+    "has_states": {"type": "boolean"},
+    "has_cities": {"type": "boolean"}
+  }
+}

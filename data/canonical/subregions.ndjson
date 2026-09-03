@@ -1,0 +1,22 @@
+{"id":19,"name":"Australia and New Zealand","normalized_name":"australia and new zealand","region_id":5,"wikidata_id":"Q45256"}
+{"id":7,"name":"Caribbean","normalized_name":"caribbean","region_id":2,"wikidata_id":"Q664609"}
+{"id":9,"name":"Central America","normalized_name":"central america","region_id":2,"wikidata_id":"Q27611"}
+{"id":10,"name":"Central Asia","normalized_name":"central asia","region_id":3,"wikidata_id":"Q27275"}
+{"id":4,"name":"Eastern Africa","normalized_name":"eastern africa","region_id":1,"wikidata_id":"Q27407"}
+{"id":12,"name":"Eastern Asia","normalized_name":"eastern asia","region_id":3,"wikidata_id":"Q27231"}
+{"id":15,"name":"Eastern Europe","normalized_name":"eastern europe","region_id":4,"wikidata_id":"Q27468"}
+{"id":20,"name":"Melanesia","normalized_name":"melanesia","region_id":5,"wikidata_id":"Q37394"}
+{"id":21,"name":"Micronesia","normalized_name":"micronesia","region_id":5,"wikidata_id":"Q3359409"}
+{"id":2,"name":"Middle Africa","normalized_name":"middle africa","region_id":1,"wikidata_id":"Q27433"}
+{"id":1,"name":"Northern Africa","normalized_name":"northern africa","region_id":1,"wikidata_id":"Q27381"}
+{"id":6,"name":"Northern America","normalized_name":"northern america","region_id":2,"wikidata_id":"Q2017699"}
+{"id":18,"name":"Northern Europe","normalized_name":"northern europe","region_id":4,"wikidata_id":"Q27479"}
+{"id":22,"name":"Polynesia","normalized_name":"polynesia","region_id":5,"wikidata_id":"Q35942"}
+{"id":8,"name":"South America","normalized_name":"south america","region_id":2,"wikidata_id":"Q18"}
+{"id":13,"name":"South-Eastern Asia","normalized_name":"south eastern asia","region_id":3,"wikidata_id":"Q11708"}
+{"id":5,"name":"Southern Africa","normalized_name":"southern africa","region_id":1,"wikidata_id":"Q27394"}
+{"id":14,"name":"Southern Asia","normalized_name":"southern asia","region_id":3,"wikidata_id":"Q771405"}
+{"id":16,"name":"Southern Europe","normalized_name":"southern europe","region_id":4,"wikidata_id":"Q27449"}
+{"id":3,"name":"Western Africa","normalized_name":"western africa","region_id":1,"wikidata_id":"Q4412"}
+{"id":11,"name":"Western Asia","normalized_name":"western asia","region_id":3,"wikidata_id":"Q27293"}
+{"id":17,"name":"Western Europe","normalized_name":"western europe","region_id":4,"wikidata_id":"Q27496"}

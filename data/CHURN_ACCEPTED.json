@@ -1,0 +1,17 @@
+{
+  "2026.05-2026.09": {
+    "accepted_on": "2026-09-03",
+    "breaches": [
+      "states: 432 rows disappeared entirely (9.0% of 4,813, limit 2.0%)",
+      "cities: 6,351 rows disappeared entirely (4.2% of 150,709, limit 2.0%)",
+      "cities/US: 3,104 rows disappeared entirely (99% of the rows that moved for this country)",
+      "cities/TH: 645 rows disappeared entirely (50% of the rows that moved for this country)",
+      "cities/TR: 510 rows disappeared entirely (76% of the rows that moved for this country)",
+      "cities/ID: 424 rows disappeared entirely (57% of the rows that moved for this country)",
+      "cities/PL: 315 rows disappeared entirely (100% of the rows that moved for this country)",
+      "cities/PH: 123 rows disappeared entirely (38% of the rows that moved for this country)",
+      "cities/RO: 107 rows disappeared entirely (100% of the rows that moved for this country)"
+    ],
+    "reason": "Accepted. Every breach traces to a documented upstream reorganization in dr5hn v3.2, and each removes rows that were miscategorised rather than losing real places. Verified by sampling the removed rows per country:\n\ncities/US (3,104): US counties (\"Autauga County\", \"Baldwin County\") that upstream moved out of the cities table via relocate_us_counties.py. A county is not a city.\ncities/TH (645): \"Amphoe X\" entries -- amphoe is a district, not a settlement.\ncities/TR (510): \"X Ilcesi\" district entries plus province names (Adiyaman, Afyonkarahisar) that duplicate state-level rows.\ncities/ID (424): \"Kabupaten X\" regency entries -- an administrative division, not a city.\ncities/PL (315): \"Powiat X\" county entries.\ncities/RO (107): \"Comuna X\" / \"Oras X\" administrative units.\ncities/PH (123): residual duplicates after upstream deduplication; the bulk of the earlier PH delta was matcher noise, not removal.\n\nstates (432): genuine administrative reforms upstream implemented -- North Macedonia municipality restructure (83), Latvia's 2021 municipal reform (78), Albania's county/district reorganisation (34), Vietnam's province mergers (29), Greece's Kallikratis regional units (25).\n\nNet effect is +495 states and +2,261 cities. No populated place known to the old snapshot disappears without a documented reason."
+  }
+}

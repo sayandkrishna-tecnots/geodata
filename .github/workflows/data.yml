@@ -1,0 +1,73 @@
+name: dataset
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - run: pip install pytest jsonschema "django>=4.2,<6"
+
+      # data/canonical is committed, so validation and tests need no network.
+      - name: Validate the canonical dataset
+        run: python scripts/validate.py
+
+      - name: Tests
+        run: python -m pytest tests/ -q
+
+  rebuild:
+    # Proves the committed canonical data is exactly what the pinned upstream
+    # tag produces -- catches a hand-edited data file or a drifted build script.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install jsonschema
+
+      - name: Fetch the pinned upstream tag
+        run: python scripts/fetch.py
+
+      - name: Verify SOURCE.lock hashes
+        run: python scripts/fetch.py --verify-only
+
+      - name: Rebuild canonical from upstream
+        run: python scripts/build_canonical.py
+
+      - name: The rebuild must match what is committed
+        run: |
+          if ! git diff --quiet -- data/canonical; then
+            echo "::error::data/canonical differs from a clean rebuild of the pinned tag."
+            git diff --stat -- data/canonical
+            exit 1
+          fi
+
+      - name: Churn against the last release
+        run: |
+          VERSION=$(python -c "import json;print(json.load(open('data/RELEASE.json'))['version'])")
+          if [ -d "data/snapshots/$VERSION" ]; then
+            python scripts/churn.py \
+              --from "data/snapshots/$VERSION" \
+              --from-label "$VERSION" --to-label dev --fail-on-breach
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: churn-report
+          path: artifacts/CHURN.md
+          if-no-files-found: ignore

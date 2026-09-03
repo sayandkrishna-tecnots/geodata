@@ -1,0 +1,60 @@
+# Dataset license
+
+The geographic dataset in this repository is a **derived database** produced
+from `dr5hn/countries-states-cities-database`, which is published under the
+**Open Data Commons Open Database License v1.0 (ODbL-1.0)**.
+
+    Source:  https://github.com/dr5hn/countries-states-cities-database
+    Tag:     v3.2-export.7
+    License: ODbL-1.0 -- https://opendatacommons.org/licenses/odbl/1-0/
+
+Under ODbL-1.0 that derivation obligation travels with the data, so the
+dataset here -- and every artifact that embeds it (the npm tarball, the Python
+wheel, the SQLite build) -- is likewise licensed **ODbL-1.0**.
+
+## What this means for you
+
+You may freely use, share, and adapt the data, including commercially, provided
+you:
+
+1. **Attribute.** Keep a notice such as:
+
+       Geographic data (c) dr5hn/countries-states-cities-database
+       contributors, licensed under ODbL-1.0. Modified.
+
+   In a product this belongs somewhere a user can reach -- an about page, a
+   docs page, or a `LICENSES` screen. It does not have to be on every page.
+
+2. **Share alike the database.** If you publicly distribute a *modified
+   version of the database itself*, the modified database must also be
+   ODbL-1.0.
+
+3. **Keep it open.** Do not apply technical measures that restrict others from
+   using the data as this license allows.
+
+## What this does NOT mean
+
+ODbL covers the *database*, not your application. Building a product that
+queries this data does not make your source code ODbL. The **software** in this
+repository is separately MIT-licensed (see LICENSE), so you may use, modify and
+relicense the code freely.
+
+The distinction in ODbL terms: the data is the Database; query results shown in
+your product are a Produced Work, which you may license however you like as
+long as you carry the attribution notice above.
+
+## Modifications made here
+
+This is not a verbatim redistribution. Documented in CHANGELOG.md:
+
+* re-derived from the upstream release tag rather than a downstream mirror
+* corrections applied through `data/overrides/*.patch.ndjson`, each carrying a
+  reason and a source URL
+* curated additions in `data/curated/`
+* an ISO 639 language table from `data/vendor/`, not part of the upstream export
+* normalized names and stable keys computed by `scripts/lib/normalize.py`
+
+## Not legal advice
+
+This file summarizes ODbL-1.0 for orientation. The license text at the URL
+above governs.

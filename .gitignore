@@ -1,0 +1,39 @@
+# Upstream download cache -- reproducible from data/SOURCE.lock via `make fetch`.
+.cache/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# nia-ide: managed by Nia IDE
+.nia/
+.claude/
+
+# Release snapshots -- regenerable via `make release`; 6 MB per version.
+# Committed deliberately per docs/RELEASING.md; uncomment to exclude.
+# data/snapshots/
+
+# Pre-remediation snapshot (35 MB) superseded by data/canonical/.
+# Kept on disk so tests/test_data_regressions.py can prove the old data was
+# wrong; those tests skip cleanly when absent. Deliberately NOT in git history
+# -- 35 MB of superseded data is not worth permanent history bloat.
+/cities.json
+/countries.json
+/states.json
+
+# --- JS package ---
+packages/js/node_modules/
+packages/js/dist/
+# Generated from data/canonical by scripts/build_js.py -- never hand-edited.
+packages/js/src/data/
+packages/js/src/country/
+packages/js/src/generated/
+packages/js/*.tgz
+examples/nextjs/node_modules/
+examples/nextjs/.next/
+node_modules/
+
+# Build output
+dist/
+artifacts/*.sqlite

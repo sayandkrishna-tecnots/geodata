@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geodata.local/schema/subregion.schema.json",
+  "title": "Subregion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "normalized_name", "region_id"],
+  "properties": {
+    "id": {"type": "integer", "minimum": 1},
+    "name": {"type": "string", "minLength": 1},
+    "normalized_name": {"type": "string", "minLength": 1},
+    "region_id": {"type": "integer", "minimum": 1},
+    "wikidata_id": {"type": ["string", "null"], "pattern": "^Q[0-9]+$"}
+  }
+}

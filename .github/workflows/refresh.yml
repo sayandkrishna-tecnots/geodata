@@ -1,0 +1,121 @@
+name: check upstream
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays, 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "upstream release tag (default: latest)"
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: pip install jsonschema pytest
+
+      - name: Find the newest upstream release tag
+        id: upstream
+        run: |
+          if [ -n "${{ inputs.tag }}" ]; then
+            TAG="${{ inputs.tag }}"
+          else
+            TAG=$(curl -sSf \
+              https://api.github.com/repos/dr5hn/countries-states-cities-database/releases/latest \
+              | python -c "import json,sys;print(json.load(sys.stdin)['tag_name'])")
+          fi
+          CURRENT=$(python -c "import json;print(json.load(open('data/SOURCE.lock'))['tag'])")
+          echo "tag=$TAG"     >> "$GITHUB_OUTPUT"
+          echo "current=$CURRENT" >> "$GITHUB_OUTPUT"
+          if [ "$TAG" = "$CURRENT" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Already on $CURRENT."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::upstream moved $CURRENT -> $TAG"
+          fi
+
+      - name: Fetch and rebuild
+        if: steps.upstream.outputs.changed == 'true'
+        run: |
+          python scripts/fetch.py --tag "${{ steps.upstream.outputs.tag }}"
+          python scripts/build_canonical.py
+
+      # The gate runs before the PR is opened, so a broken upstream release
+      # produces a red PR with the failure attached rather than a green one.
+      - name: Validate
+        if: steps.upstream.outputs.changed == 'true'
+        id: validate
+        continue-on-error: true
+        run: python scripts/validate.py | tee artifacts/validate.txt
+
+      - name: Churn against the last release
+        if: steps.upstream.outputs.changed == 'true'
+        continue-on-error: true
+        run: |
+          VERSION=$(python -c "import json;print(json.load(open('data/RELEASE.json'))['version'])")
+          python scripts/churn.py \
+            --from "data/snapshots/$VERSION" \
+            --from-label "$VERSION" \
+            --to-label "${{ steps.upstream.outputs.tag }}" \
+            --fail-on-breach
+
+      - name: Tests
+        if: steps.upstream.outputs.changed == 'true'
+        continue-on-error: true
+        id: tests
+        run: python -m pytest tests/ -q
+
+      - name: Open a pull request
+        if: steps.upstream.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: data/upstream-${{ steps.upstream.outputs.tag }}
+          title: "data: upstream ${{ steps.upstream.outputs.current }} -> ${{ steps.upstream.outputs.tag }}"
+          commit-message: "data: refresh from upstream ${{ steps.upstream.outputs.tag }}"
+          # Never auto-merge. A human reads the churn report -- that is the
+          # entire control that stops a bad upstream release reaching consumers.
+          draft: true
+          labels: data-refresh
+          add-paths: |
+            data/SOURCE.lock
+            data/canonical/**
+            artifacts/**
+          body: |
+            Automated dataset refresh.
+
+            **Upstream:** `${{ steps.upstream.outputs.current }}` → `${{ steps.upstream.outputs.tag }}`
+
+            | check | result |
+            |---|---|
+            | validation gate | ${{ steps.validate.outcome }} |
+            | tests | ${{ steps.tests.outcome }} |
+
+            ### Before merging
+
+            1. Read `artifacts/CHURN.md` in full — especially **Gone** and
+               **Re-parented**. A re-parenting passes every integrity check and
+               still breaks queries written against the old parent.
+            2. If the churn budget is exceeded, the job above failed. Do not
+               merge on a green tick alone; record a justification with
+               `scripts/churn.py --accept-churn "..."`.
+            3. Check whether any `data/overrides/` entry has been adopted
+               upstream and can be retired (the gate reports this).
+            4. After merging, cut a release:
+               `python3 scripts/release.py --version YYYY.MM`
+               and follow `docs/MIGRATION.md` for already-seeded consumers.
+
+            This PR is a **draft on purpose**. Reference data that changes
+            without a human reading the diff is how the previous dataset ended
+            up two years stale and internally inconsistent.

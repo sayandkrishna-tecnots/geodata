@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://geodata.local/schema/state.schema.json",
+  "title": "State",
+  "description": "One ISO 3166-2 subdivision. States nest via parent_id, so a country's subdivisions form a forest, not a flat list (Decision 3).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "country_id", "country_iso2", "name", "normalized_name", "depth", "stable_key"],
+  "properties": {
+    "id": {"type": "integer", "minimum": 1},
+    "country_id": {"type": "integer", "minimum": 1},
+    "country_iso2": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "name": {"type": "string", "minLength": 1},
+    "normalized_name": {"type": "string", "minLength": 1},
+    "native": {"type": ["string", "null"]},
+    "state_code": {"type": ["string", "null"], "description": "Upstream `iso2` on the state record: the subdivision part only, e.g. ABE."},
+    "iso3166_2": {"type": ["string", "null"], "description": "Full ISO 3166-2 code, e.g. GB-ABE. Preferred join key."},
+    "fips_code": {"type": ["string", "null"]},
+    "type": {"type": ["string", "null"], "description": "province, council area, metropolitan district, ..."},
+    "level": {"type": ["integer", "null"], "minimum": 1, "description": "Upstream's semantic administrative level. ADVISORY ONLY -- it does not track tree depth. Use `depth`."},
+    "parent_id": {"type": ["integer", "null"], "description": "Another state's id. Resolves and is acyclic (validation checks 1 and 5)."},
+    "depth": {"type": "integer", "minimum": 1, "description": "Computed from the parent chain. Authoritative tree position."},
+    "latitude": {"type": ["number", "null"], "minimum": -90, "maximum": 90, "description": "Optional: upstream coverage is incomplete (issue 7)."},
+    "longitude": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+    "timezone": {"type": ["string", "null"]},
+    "population": {"type": ["integer", "null"], "minimum": 0},
+    "wikidata_id": {"type": ["string", "null"], "pattern": "^Q[0-9]+$"},
+    "stable_key": {"type": "string", "pattern": "^[A-Z]{2}/(iso|code|name):.+$", "description": "Decision 2, tiered: iso3166_2, then state_code, then normalized name."},
+    "city_count": {"type": "integer", "minimum": 0},
+    "has_cities": {"type": "boolean"}
+  }
+}

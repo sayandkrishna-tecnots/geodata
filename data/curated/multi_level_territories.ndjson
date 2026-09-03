@@ -1,0 +1,21 @@
+{"country_iso2":"GF","parent_iso2":"FR","state_id":4822,"iso3166_2":"FR-GF","state_code":"973","note":"overseas region"}
+{"country_iso2":"PF","parent_iso2":"FR","state_id":4824,"iso3166_2":"FR-PF","state_code":"PF","note":"overseas collectivity"}
+{"country_iso2":"TF","parent_iso2":"FR","state_id":5065,"iso3166_2":"FR-TF","state_code":"TF","note":"overseas territory"}
+{"country_iso2":"GP","parent_iso2":"FR","state_id":4829,"iso3166_2":"FR-GP","state_code":"971","note":"overseas region"}
+{"country_iso2":"MQ","parent_iso2":"FR","state_id":4827,"iso3166_2":"FR-MQ","state_code":"972","note":"overseas region"}
+{"country_iso2":"YT","parent_iso2":"FR","state_id":4797,"iso3166_2":"FR-YT","state_code":"976","note":"overseas region"}
+{"country_iso2":"NC","parent_iso2":"FR","state_id":5538,"iso3166_2":"FR-NC","state_code":"NC","note":"overseas collectivity with special status"}
+{"country_iso2":"RE","parent_iso2":"FR","state_id":4823,"iso3166_2":"FR-RE","state_code":"974","note":"overseas region"}
+{"country_iso2":"PM","parent_iso2":"FR","state_id":4821,"iso3166_2":"FR-PM","state_code":"PM","note":"overseas collectivity"}
+{"country_iso2":"BL","parent_iso2":"FR","state_id":4794,"iso3166_2":"FR-BL","state_code":"BL","note":"overseas collectivity"}
+{"country_iso2":"MF","parent_iso2":"FR","state_id":4809,"iso3166_2":"FR-MF","state_code":"MF","note":"overseas collectivity"}
+{"country_iso2":"WF","parent_iso2":"FR","state_id":4810,"iso3166_2":"FR-WF","state_code":"WF","note":"overseas collectivity"}
+{"country_iso2":"HK","parent_iso2":"CN","state_id":2267,"iso3166_2":"CN-HK","state_code":"HK","note":"special administrative region"}
+{"country_iso2":"MO","parent_iso2":"CN","state_id":2266,"iso3166_2":"CN-MO","state_code":"MO","note":"special administrative region"}
+{"country_iso2":"PR","parent_iso2":"US","state_id":1449,"iso3166_2":"US-PR","state_code":"PR","note":"outlying area"}
+{"country_iso2":"GU","parent_iso2":"US","state_id":1412,"iso3166_2":"US-GU","state_code":"GU","note":"outlying area"}
+{"country_iso2":"AS","parent_iso2":"US","state_id":1424,"iso3166_2":"US-AS","state_code":"AS","note":"outlying area"}
+{"country_iso2":"MP","parent_iso2":"US","state_id":1431,"iso3166_2":"US-MP","state_code":"MP","note":"outlying area"}
+{"country_iso2":"VI","parent_iso2":"US","state_id":1413,"iso3166_2":"US-VI","state_code":"VI","note":"outlying area"}
+{"country_iso2":"UM","parent_iso2":"US","state_id":1432,"iso3166_2":"US-UM","state_code":"UM","note":"outlying area"}
+{"country_iso2":"SJ","parent_iso2":"NO","state_id":1013,"iso3166_2":"NO-21","state_code":"SJ","note":"Svalbard; Jan Mayen is state 1026"}

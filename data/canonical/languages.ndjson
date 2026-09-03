@@ -1,0 +1,420 @@
+{"code":"aa","name":"Afar","normalized_name":"afar","stable_key":"aa","standard":"iso639_1"}
+{"code":"ab","name":"Abkhazian","normalized_name":"abkhazian","stable_key":"ab","standard":"iso639_1"}
+{"code":"ace","name":"Achinese","normalized_name":"achinese","stable_key":"ace","standard":"iso639_2"}
+{"code":"ach","name":"Acoli","normalized_name":"acoli","stable_key":"ach","standard":"iso639_2"}
+{"code":"ada","name":"Adangme","normalized_name":"adangme","stable_key":"ada","standard":"iso639_2"}
+{"code":"ady","name":"Adyghe","normalized_name":"adyghe","stable_key":"ady","standard":"iso639_2"}
+{"code":"ae","name":"Avestan","normalized_name":"avestan","stable_key":"ae","standard":"iso639_1"}
+{"code":"af","name":"Afrikaans","normalized_name":"afrikaans","stable_key":"af","standard":"iso639_1"}
+{"code":"afh","name":"Afrihili","normalized_name":"afrihili","stable_key":"afh","standard":"iso639_2"}
+{"code":"ain","name":"Ainu","normalized_name":"ainu","stable_key":"ain","standard":"iso639_2"}
+{"code":"ak","name":"Akan","normalized_name":"akan","stable_key":"ak","standard":"iso639_1"}
+{"code":"akk","name":"Akkadian","normalized_name":"akkadian","stable_key":"akk","standard":"iso639_2"}
+{"code":"ale","name":"Aleut","normalized_name":"aleut","stable_key":"ale","standard":"iso639_2"}
+{"code":"alt","name":"Southern Altai","normalized_name":"southern altai","stable_key":"alt","standard":"iso639_2"}
+{"code":"am","name":"Amharic","normalized_name":"amharic","stable_key":"am","standard":"iso639_1"}
+{"code":"an","name":"Aragonese","normalized_name":"aragonese","stable_key":"an","standard":"iso639_1"}
+{"code":"ang","name":"Old English","normalized_name":"old english","stable_key":"ang","standard":"iso639_2"}
+{"code":"anp","name":"Angika","normalized_name":"angika","stable_key":"anp","standard":"iso639_2"}
+{"code":"ar","name":"Arabic","normalized_name":"arabic","stable_key":"ar","standard":"iso639_1"}
+{"code":"arc","name":"Aramaic (Imperial)","normalized_name":"aramaic imperial","stable_key":"arc","standard":"iso639_2"}
+{"code":"arn","name":"Mapudungun","normalized_name":"mapudungun","stable_key":"arn","standard":"iso639_2"}
+{"code":"arp","name":"Arapaho","normalized_name":"arapaho","stable_key":"arp","standard":"iso639_2"}
+{"code":"arw","name":"Arawak","normalized_name":"arawak","stable_key":"arw","standard":"iso639_2"}
+{"code":"as","name":"Assamese","normalized_name":"assamese","stable_key":"as","standard":"iso639_1"}
+{"code":"ast","name":"Asturian","normalized_name":"asturian","stable_key":"ast","standard":"iso639_2"}
+{"code":"av","name":"Avaric","normalized_name":"avaric","stable_key":"av","standard":"iso639_1"}
+{"code":"awa","name":"Awadhi","normalized_name":"awadhi","stable_key":"awa","standard":"iso639_2"}
+{"code":"ay","name":"Aymara","normalized_name":"aymara","stable_key":"ay","standard":"iso639_1"}
+{"code":"az","name":"Azerbaijani","normalized_name":"azerbaijani","stable_key":"az","standard":"iso639_1"}
+{"code":"ba","name":"Bashkir","normalized_name":"bashkir","stable_key":"ba","standard":"iso639_1"}
+{"code":"bal","name":"Baluchi","normalized_name":"baluchi","stable_key":"bal","standard":"iso639_2"}
+{"code":"ban","name":"Balinese","normalized_name":"balinese","stable_key":"ban","standard":"iso639_2"}
+{"code":"bas","name":"Basa","normalized_name":"basa","stable_key":"bas","standard":"iso639_2"}
+{"code":"be","name":"Belarusian","normalized_name":"belarusian","stable_key":"be","standard":"iso639_1"}
+{"code":"bej","name":"Beja","normalized_name":"beja","stable_key":"bej","standard":"iso639_2"}
+{"code":"bem","name":"Bemba","normalized_name":"bemba","stable_key":"bem","standard":"iso639_2"}
+{"code":"bg","name":"Bulgarian","normalized_name":"bulgarian","stable_key":"bg","standard":"iso639_1"}
+{"code":"bh","name":"Bihari","normalized_name":"bihari","stable_key":"bh","standard":"iso639_1"}
+{"code":"bho","name":"Bhojpuri","normalized_name":"bhojpuri","stable_key":"bho","standard":"iso639_2"}
+{"code":"bi","name":"Bislama","normalized_name":"bislama","stable_key":"bi","standard":"iso639_1"}
+{"code":"bik","name":"Bikol","normalized_name":"bikol","stable_key":"bik","standard":"iso639_2"}
+{"code":"bin","name":"Edo","normalized_name":"edo","stable_key":"bin","standard":"iso639_2"}
+{"code":"bla","name":"Siksika","normalized_name":"siksika","stable_key":"bla","standard":"iso639_2"}
+{"code":"bm","name":"Bambara","normalized_name":"bambara","stable_key":"bm","standard":"iso639_1"}
+{"code":"bn","name":"Bengali","normalized_name":"bengali","stable_key":"bn","standard":"iso639_1"}
+{"code":"bo","name":"Tibetan","normalized_name":"tibetan","stable_key":"bo","standard":"iso639_1"}
+{"code":"br","name":"Breton","normalized_name":"breton","stable_key":"br","standard":"iso639_1"}
+{"code":"bra","name":"Braj","normalized_name":"braj","stable_key":"bra","standard":"iso639_2"}
+{"code":"brx","name":"Bodo","normalized_name":"bodo","stable_key":"brx","standard":"iso639_2"}
+{"code":"bs","name":"Bosnian","normalized_name":"bosnian","stable_key":"bs","standard":"iso639_1"}
+{"code":"bua","name":"Buriat","normalized_name":"buriat","stable_key":"bua","standard":"iso639_2"}
+{"code":"bug","name":"Buginese","normalized_name":"buginese","stable_key":"bug","standard":"iso639_2"}
+{"code":"byn","name":"Bilin","normalized_name":"bilin","stable_key":"byn","standard":"iso639_2"}
+{"code":"ca","name":"Catalan","normalized_name":"catalan","stable_key":"ca","standard":"iso639_1"}
+{"code":"cad","name":"Caddo","normalized_name":"caddo","stable_key":"cad","standard":"iso639_2"}
+{"code":"car","name":"Galibi Carib","normalized_name":"galibi carib","stable_key":"car","standard":"iso639_2"}
+{"code":"ce","name":"Chechen","normalized_name":"chechen","stable_key":"ce","standard":"iso639_1"}
+{"code":"ceb","name":"Cebuano","normalized_name":"cebuano","stable_key":"ceb","standard":"iso639_2"}
+{"code":"ch","name":"Chamorro","normalized_name":"chamorro","stable_key":"ch","standard":"iso639_1"}
+{"code":"chb","name":"Chibcha","normalized_name":"chibcha","stable_key":"chb","standard":"iso639_2"}
+{"code":"chg","name":"Chagatai","normalized_name":"chagatai","stable_key":"chg","standard":"iso639_2"}
+{"code":"chk","name":"Chuukese","normalized_name":"chuukese","stable_key":"chk","standard":"iso639_2"}
+{"code":"chm","name":"Mari","normalized_name":"mari","stable_key":"chm","standard":"iso639_2"}
+{"code":"chn","name":"Chinook Jargon","normalized_name":"chinook jargon","stable_key":"chn","standard":"iso639_2"}
+{"code":"cho","name":"Choctaw","normalized_name":"choctaw","stable_key":"cho","standard":"iso639_2"}
+{"code":"chp","name":"Chipewyan","normalized_name":"chipewyan","stable_key":"chp","standard":"iso639_2"}
+{"code":"chr","name":"Cherokee","normalized_name":"cherokee","stable_key":"chr","standard":"iso639_2"}
+{"code":"chy","name":"Cheyenne","normalized_name":"cheyenne","stable_key":"chy","standard":"iso639_2"}
+{"code":"cmn","name":"Mandarin Chinese","normalized_name":"mandarin chinese","stable_key":"cmn","standard":"iso639_2"}
+{"code":"co","name":"Corsican","normalized_name":"corsican","stable_key":"co","standard":"iso639_1"}
+{"code":"cop","name":"Coptic","normalized_name":"coptic","stable_key":"cop","standard":"iso639_2"}
+{"code":"cr","name":"Cree","normalized_name":"cree","stable_key":"cr","standard":"iso639_1"}
+{"code":"crh","name":"Crimean Tatar","normalized_name":"crimean tatar","stable_key":"crh","standard":"iso639_2"}
+{"code":"cs","name":"Czech","normalized_name":"czech","stable_key":"cs","standard":"iso639_1"}
+{"code":"csb","name":"Kashubian","normalized_name":"kashubian","stable_key":"csb","standard":"iso639_2"}
+{"code":"cu","name":"Old Church Slavonic","normalized_name":"old church slavonic","stable_key":"cu","standard":"iso639_1"}
+{"code":"cv","name":"Chuvash","normalized_name":"chuvash","stable_key":"cv","standard":"iso639_1"}
+{"code":"cy","name":"Welsh","normalized_name":"welsh","stable_key":"cy","standard":"iso639_1"}
+{"code":"da","name":"Danish","normalized_name":"danish","stable_key":"da","standard":"iso639_1"}
+{"code":"dak","name":"Dakota","normalized_name":"dakota","stable_key":"dak","standard":"iso639_2"}
+{"code":"dar","name":"Dargwa","normalized_name":"dargwa","stable_key":"dar","standard":"iso639_2"}
+{"code":"de","name":"German","normalized_name":"german","stable_key":"de","standard":"iso639_1"}
+{"code":"del","name":"Delaware","normalized_name":"delaware","stable_key":"del","standard":"iso639_2"}
+{"code":"den","name":"Slave (Athapascan)","normalized_name":"slave athapascan","stable_key":"den","standard":"iso639_2"}
+{"code":"dgr","name":"Dogrib","normalized_name":"dogrib","stable_key":"dgr","standard":"iso639_2"}
+{"code":"din","name":"Dinka","normalized_name":"dinka","stable_key":"din","standard":"iso639_2"}
+{"code":"doi","name":"Dogri","normalized_name":"dogri","stable_key":"doi","standard":"iso639_2"}
+{"code":"dsb","name":"Lower Sorbian","normalized_name":"lower sorbian","stable_key":"dsb","standard":"iso639_2"}
+{"code":"dua","name":"Duala","normalized_name":"duala","stable_key":"dua","standard":"iso639_2"}
+{"code":"dum","name":"Middle Dutch","normalized_name":"middle dutch","stable_key":"dum","standard":"iso639_2"}
+{"code":"dv","name":"Divehi","normalized_name":"divehi","stable_key":"dv","standard":"iso639_1"}
+{"code":"dyu","name":"Dyula","normalized_name":"dyula","stable_key":"dyu","standard":"iso639_2"}
+{"code":"dz","name":"Dzongkha","normalized_name":"dzongkha","stable_key":"dz","standard":"iso639_1"}
+{"code":"ee","name":"Ewe","normalized_name":"ewe","stable_key":"ee","standard":"iso639_1"}
+{"code":"efi","name":"Efik","normalized_name":"efik","stable_key":"efi","standard":"iso639_2"}
+{"code":"egy","name":"Egyptian (Ancient)","normalized_name":"egyptian ancient","stable_key":"egy","standard":"iso639_2"}
+{"code":"eka","name":"Ekajuk","normalized_name":"ekajuk","stable_key":"eka","standard":"iso639_2"}
+{"code":"el","name":"Greek","normalized_name":"greek","stable_key":"el","standard":"iso639_1"}
+{"code":"elx","name":"Elamite","normalized_name":"elamite","stable_key":"elx","standard":"iso639_2"}
+{"code":"en","name":"English","normalized_name":"english","stable_key":"en","standard":"iso639_1"}
+{"code":"enm","name":"Middle English","normalized_name":"middle english","stable_key":"enm","standard":"iso639_2"}
+{"code":"eo","name":"Esperanto","normalized_name":"esperanto","stable_key":"eo","standard":"iso639_1"}
+{"code":"es","name":"Spanish","normalized_name":"spanish","stable_key":"es","standard":"iso639_1"}
+{"code":"et","name":"Estonian","normalized_name":"estonian","stable_key":"et","standard":"iso639_1"}
+{"code":"eu","name":"Basque","normalized_name":"basque","stable_key":"eu","standard":"iso639_1"}
+{"code":"ewo","name":"Ewondo","normalized_name":"ewondo","stable_key":"ewo","standard":"iso639_2"}
+{"code":"fa","name":"Persian","normalized_name":"persian","stable_key":"fa","standard":"iso639_1"}
+{"code":"fan","name":"Fang","normalized_name":"fang","stable_key":"fan","standard":"iso639_2"}
+{"code":"fat","name":"Fanti","normalized_name":"fanti","stable_key":"fat","standard":"iso639_2"}
+{"code":"ff","name":"Fula","normalized_name":"fula","stable_key":"ff","standard":"iso639_1"}
+{"code":"fi","name":"Finnish","normalized_name":"finnish","stable_key":"fi","standard":"iso639_1"}
+{"code":"fil","name":"Filipino","normalized_name":"filipino","stable_key":"fil","standard":"iso639_2"}
+{"code":"fj","name":"Fijian","normalized_name":"fijian","stable_key":"fj","standard":"iso639_1"}
+{"code":"fo","name":"Faroese","normalized_name":"faroese","stable_key":"fo","standard":"iso639_1"}
+{"code":"fon","name":"Fon","normalized_name":"fon","stable_key":"fon","standard":"iso639_2"}
+{"code":"fr","name":"French","normalized_name":"french","stable_key":"fr","standard":"iso639_1"}
+{"code":"frm","name":"Middle French","normalized_name":"middle french","stable_key":"frm","standard":"iso639_2"}
+{"code":"fro","name":"Old French","normalized_name":"old french","stable_key":"fro","standard":"iso639_2"}
+{"code":"frr","name":"Northern Frisian","normalized_name":"northern frisian","stable_key":"frr","standard":"iso639_2"}
+{"code":"fur","name":"Friulian","normalized_name":"friulian","stable_key":"fur","standard":"iso639_2"}
+{"code":"fy","name":"Western Frisian","normalized_name":"western frisian","stable_key":"fy","standard":"iso639_1"}
+{"code":"ga","name":"Irish","normalized_name":"irish","stable_key":"ga","standard":"iso639_1"}
+{"code":"gaa","name":"Ga","normalized_name":"ga","stable_key":"gaa","standard":"iso639_2"}
+{"code":"gan","name":"Gan Chinese","normalized_name":"gan chinese","stable_key":"gan","standard":"iso639_2"}
+{"code":"gay","name":"Gayo","normalized_name":"gayo","stable_key":"gay","standard":"iso639_2"}
+{"code":"gba","name":"Gbaya","normalized_name":"gbaya","stable_key":"gba","standard":"iso639_2"}
+{"code":"gbm","name":"Garhwali","normalized_name":"garhwali","stable_key":"gbm","standard":"iso639_2"}
+{"code":"gd","name":"Scottish Gaelic","normalized_name":"scottish gaelic","stable_key":"gd","standard":"iso639_1"}
+{"code":"gez","name":"Geez","normalized_name":"geez","stable_key":"gez","standard":"iso639_2"}
+{"code":"gil","name":"Gilbertese","normalized_name":"gilbertese","stable_key":"gil","standard":"iso639_2"}
+{"code":"gl","name":"Galician","normalized_name":"galician","stable_key":"gl","standard":"iso639_1"}
+{"code":"gmh","name":"Middle High German","normalized_name":"middle high german","stable_key":"gmh","standard":"iso639_2"}
+{"code":"gn","name":"Guaraní","normalized_name":"guarani","stable_key":"gn","standard":"iso639_1"}
+{"code":"goh","name":"Old High German","normalized_name":"old high german","stable_key":"goh","standard":"iso639_2"}
+{"code":"gon","name":"Gondi","normalized_name":"gondi","stable_key":"gon","standard":"iso639_2"}
+{"code":"gor","name":"Gorontalo","normalized_name":"gorontalo","stable_key":"gor","standard":"iso639_2"}
+{"code":"got","name":"Gothic","normalized_name":"gothic","stable_key":"got","standard":"iso639_2"}
+{"code":"grb","name":"Grebo","normalized_name":"grebo","stable_key":"grb","standard":"iso639_2"}
+{"code":"grc","name":"Ancient Greek","normalized_name":"ancient greek","stable_key":"grc","standard":"iso639_2"}
+{"code":"gsw","name":"Swiss German","normalized_name":"swiss german","stable_key":"gsw","standard":"iso639_2"}
+{"code":"gu","name":"Gujarati","normalized_name":"gujarati","stable_key":"gu","standard":"iso639_1"}
+{"code":"gv","name":"Manx","normalized_name":"manx","stable_key":"gv","standard":"iso639_1"}
+{"code":"gwi","name":"Gwichin","normalized_name":"gwichin","stable_key":"gwi","standard":"iso639_2"}
+{"code":"ha","name":"Hausa","normalized_name":"hausa","stable_key":"ha","standard":"iso639_1"}
+{"code":"hai","name":"Haida","normalized_name":"haida","stable_key":"hai","standard":"iso639_2"}
+{"code":"hak","name":"Hakka Chinese","normalized_name":"hakka chinese","stable_key":"hak","standard":"iso639_2"}
+{"code":"haw","name":"Hawaiian","normalized_name":"hawaiian","stable_key":"haw","standard":"iso639_2"}
+{"code":"he","name":"Hebrew","normalized_name":"hebrew","stable_key":"he","standard":"iso639_1"}
+{"code":"hi","name":"Hindi","normalized_name":"hindi","stable_key":"hi","standard":"iso639_1"}
+{"code":"hil","name":"Hiligaynon","normalized_name":"hiligaynon","stable_key":"hil","standard":"iso639_2"}
+{"code":"hit","name":"Hittite","normalized_name":"hittite","stable_key":"hit","standard":"iso639_2"}
+{"code":"hmn","name":"Hmong","normalized_name":"hmong","stable_key":"hmn","standard":"iso639_2"}
+{"code":"hne","name":"Chhattisgarhi","normalized_name":"chhattisgarhi","stable_key":"hne","standard":"iso639_2"}
+{"code":"ho","name":"Hiri Motu","normalized_name":"hiri motu","stable_key":"ho","standard":"iso639_1"}
+{"code":"hr","name":"Croatian","normalized_name":"croatian","stable_key":"hr","standard":"iso639_1"}
+{"code":"hsb","name":"Upper Sorbian","normalized_name":"upper sorbian","stable_key":"hsb","standard":"iso639_2"}
+{"code":"hsn","name":"Xiang Chinese","normalized_name":"xiang chinese","stable_key":"hsn","standard":"iso639_2"}
+{"code":"ht","name":"Haitian Creole","normalized_name":"haitian creole","stable_key":"ht","standard":"iso639_1"}
+{"code":"hu","name":"Hungarian","normalized_name":"hungarian","stable_key":"hu","standard":"iso639_1"}
+{"code":"hup","name":"Hupa","normalized_name":"hupa","stable_key":"hup","standard":"iso639_2"}
+{"code":"hy","name":"Armenian","normalized_name":"armenian","stable_key":"hy","standard":"iso639_1"}
+{"code":"hz","name":"Herero","normalized_name":"herero","stable_key":"hz","standard":"iso639_1"}
+{"code":"ia","name":"Interlingua","normalized_name":"interlingua","stable_key":"ia","standard":"iso639_1"}
+{"code":"iba","name":"Iban","normalized_name":"iban","stable_key":"iba","standard":"iso639_2"}
+{"code":"id","name":"Indonesian","normalized_name":"indonesian","stable_key":"id","standard":"iso639_1"}
+{"code":"ie","name":"Interlingue","normalized_name":"interlingue","stable_key":"ie","standard":"iso639_1"}
+{"code":"ig","name":"Igbo","normalized_name":"igbo","stable_key":"ig","standard":"iso639_1"}
+{"code":"ii","name":"Nuosu","normalized_name":"nuosu","stable_key":"ii","standard":"iso639_1"}
+{"code":"ik","name":"Inupiaq","normalized_name":"inupiaq","stable_key":"ik","standard":"iso639_1"}
+{"code":"ilo","name":"Ilocano","normalized_name":"ilocano","stable_key":"ilo","standard":"iso639_2"}
+{"code":"inh","name":"Ingush","normalized_name":"ingush","stable_key":"inh","standard":"iso639_2"}
+{"code":"io","name":"Ido","normalized_name":"ido","stable_key":"io","standard":"iso639_1"}
+{"code":"is","name":"Icelandic","normalized_name":"icelandic","stable_key":"is","standard":"iso639_1"}
+{"code":"it","name":"Italian","normalized_name":"italian","stable_key":"it","standard":"iso639_1"}
+{"code":"iu","name":"Inuktitut","normalized_name":"inuktitut","stable_key":"iu","standard":"iso639_1"}
+{"code":"ja","name":"Japanese","normalized_name":"japanese","stable_key":"ja","standard":"iso639_1"}
+{"code":"jbo","name":"Lojban","normalized_name":"lojban","stable_key":"jbo","standard":"iso639_2"}
+{"code":"jpr","name":"Judeo-Persian","normalized_name":"judeo persian","stable_key":"jpr","standard":"iso639_2"}
+{"code":"jrb","name":"Judeo-Arabic","normalized_name":"judeo arabic","stable_key":"jrb","standard":"iso639_2"}
+{"code":"jv","name":"Javanese","normalized_name":"javanese","stable_key":"jv","standard":"iso639_1"}
+{"code":"ka","name":"Georgian","normalized_name":"georgian","stable_key":"ka","standard":"iso639_1"}
+{"code":"kaa","name":"Kara-Kalpak","normalized_name":"kara kalpak","stable_key":"kaa","standard":"iso639_2"}
+{"code":"kab","name":"Kabyle","normalized_name":"kabyle","stable_key":"kab","standard":"iso639_2"}
+{"code":"kac","name":"Kachin","normalized_name":"kachin","stable_key":"kac","standard":"iso639_2"}
+{"code":"kam","name":"Kamba","normalized_name":"kamba","stable_key":"kam","standard":"iso639_2"}
+{"code":"kaw","name":"Kawi","normalized_name":"kawi","stable_key":"kaw","standard":"iso639_2"}
+{"code":"kbd","name":"Kabardian","normalized_name":"kabardian","stable_key":"kbd","standard":"iso639_2"}
+{"code":"kfy","name":"Kumaoni","normalized_name":"kumaoni","stable_key":"kfy","standard":"iso639_2"}
+{"code":"kg","name":"Kongo","normalized_name":"kongo","stable_key":"kg","standard":"iso639_1"}
+{"code":"kha","name":"Khasi","normalized_name":"khasi","stable_key":"kha","standard":"iso639_2"}
+{"code":"kho","name":"Khotanese","normalized_name":"khotanese","stable_key":"kho","standard":"iso639_2"}
+{"code":"ki","name":"Kikuyu","normalized_name":"kikuyu","stable_key":"ki","standard":"iso639_1"}
+{"code":"kj","name":"Kwanyama","normalized_name":"kwanyama","stable_key":"kj","standard":"iso639_1"}
+{"code":"kk","name":"Kazakh","normalized_name":"kazakh","stable_key":"kk","standard":"iso639_1"}
+{"code":"kl","name":"Kalaallisut","normalized_name":"kalaallisut","stable_key":"kl","standard":"iso639_1"}
+{"code":"km","name":"Khmer","normalized_name":"khmer","stable_key":"km","standard":"iso639_1"}
+{"code":"kmb","name":"Kimbundu","normalized_name":"kimbundu","stable_key":"kmb","standard":"iso639_2"}
+{"code":"kn","name":"Kannada","normalized_name":"kannada","stable_key":"kn","standard":"iso639_1"}
+{"code":"ko","name":"Korean","normalized_name":"korean","stable_key":"ko","standard":"iso639_1"}
+{"code":"kok","name":"Konkani","normalized_name":"konkani","stable_key":"kok","standard":"iso639_2"}
+{"code":"kos","name":"Kosraean","normalized_name":"kosraean","stable_key":"kos","standard":"iso639_2"}
+{"code":"kpe","name":"Kpelle","normalized_name":"kpelle","stable_key":"kpe","standard":"iso639_2"}
+{"code":"kr","name":"Kanuri","normalized_name":"kanuri","stable_key":"kr","standard":"iso639_1"}
+{"code":"krc","name":"Karachay-Balkar","normalized_name":"karachay balkar","stable_key":"krc","standard":"iso639_2"}
+{"code":"krl","name":"Karelian","normalized_name":"karelian","stable_key":"krl","standard":"iso639_2"}
+{"code":"kru","name":"Kurukh","normalized_name":"kurukh","stable_key":"kru","standard":"iso639_2"}
+{"code":"ks","name":"Kashmiri","normalized_name":"kashmiri","stable_key":"ks","standard":"iso639_1"}
+{"code":"ku","name":"Kurdish","normalized_name":"kurdish","stable_key":"ku","standard":"iso639_1"}
+{"code":"kum","name":"Kumyk","normalized_name":"kumyk","stable_key":"kum","standard":"iso639_2"}
+{"code":"kut","name":"Kutenai","normalized_name":"kutenai","stable_key":"kut","standard":"iso639_2"}
+{"code":"kv","name":"Komi","normalized_name":"komi","stable_key":"kv","standard":"iso639_1"}
+{"code":"kw","name":"Cornish","normalized_name":"cornish","stable_key":"kw","standard":"iso639_1"}
+{"code":"ky","name":"Kyrgyz","normalized_name":"kyrgyz","stable_key":"ky","standard":"iso639_1"}
+{"code":"la","name":"Latin","normalized_name":"latin","stable_key":"la","standard":"iso639_1"}
+{"code":"lad","name":"Ladino","normalized_name":"ladino","stable_key":"lad","standard":"iso639_2"}
+{"code":"lah","name":"Lahnda","normalized_name":"lahnda","stable_key":"lah","standard":"iso639_2"}
+{"code":"lam","name":"Lamba","normalized_name":"lamba","stable_key":"lam","standard":"iso639_2"}
+{"code":"lb","name":"Luxembourgish","normalized_name":"luxembourgish","stable_key":"lb","standard":"iso639_1"}
+{"code":"lez","name":"Lezghian","normalized_name":"lezghian","stable_key":"lez","standard":"iso639_2"}
+{"code":"lg","name":"Luganda","normalized_name":"luganda","stable_key":"lg","standard":"iso639_1"}
+{"code":"li","name":"Limburgish","normalized_name":"limburgish","stable_key":"li","standard":"iso639_1"}
+{"code":"ln","name":"Lingala","normalized_name":"lingala","stable_key":"ln","standard":"iso639_1"}
+{"code":"lo","name":"Lao","normalized_name":"lao","stable_key":"lo","standard":"iso639_1"}
+{"code":"lol","name":"Mongo","normalized_name":"mongo","stable_key":"lol","standard":"iso639_2"}
+{"code":"loz","name":"Lozi","normalized_name":"lozi","stable_key":"loz","standard":"iso639_2"}
+{"code":"lt","name":"Lithuanian","normalized_name":"lithuanian","stable_key":"lt","standard":"iso639_1"}
+{"code":"lu","name":"Luba-Katanga","normalized_name":"luba katanga","stable_key":"lu","standard":"iso639_1"}
+{"code":"lua","name":"Luba-Lulua","normalized_name":"luba lulua","stable_key":"lua","standard":"iso639_2"}
+{"code":"lui","name":"Luiseno","normalized_name":"luiseno","stable_key":"lui","standard":"iso639_2"}
+{"code":"lun","name":"Lunda","normalized_name":"lunda","stable_key":"lun","standard":"iso639_2"}
+{"code":"luo","name":"Luo","normalized_name":"luo","stable_key":"luo","standard":"iso639_2"}
+{"code":"lus","name":"Lushai","normalized_name":"lushai","stable_key":"lus","standard":"iso639_2"}
+{"code":"lv","name":"Latvian","normalized_name":"latvian","stable_key":"lv","standard":"iso639_1"}
+{"code":"mad","name":"Madurese","normalized_name":"madurese","stable_key":"mad","standard":"iso639_2"}
+{"code":"mag","name":"Magahi","normalized_name":"magahi","stable_key":"mag","standard":"iso639_2"}
+{"code":"mai","name":"Maithili","normalized_name":"maithili","stable_key":"mai","standard":"iso639_2"}
+{"code":"mak","name":"Makasar","normalized_name":"makasar","stable_key":"mak","standard":"iso639_2"}
+{"code":"man","name":"Mandingo","normalized_name":"mandingo","stable_key":"man","standard":"iso639_2"}
+{"code":"mas","name":"Masai","normalized_name":"masai","stable_key":"mas","standard":"iso639_2"}
+{"code":"mdf","name":"Moksha","normalized_name":"moksha","stable_key":"mdf","standard":"iso639_2"}
+{"code":"mdr","name":"Mandar","normalized_name":"mandar","stable_key":"mdr","standard":"iso639_2"}
+{"code":"men","name":"Mende","normalized_name":"mende","stable_key":"men","standard":"iso639_2"}
+{"code":"mg","name":"Malagasy","normalized_name":"malagasy","stable_key":"mg","standard":"iso639_1"}
+{"code":"mga","name":"Middle Irish","normalized_name":"middle irish","stable_key":"mga","standard":"iso639_2"}
+{"code":"mh","name":"Marshallese","normalized_name":"marshallese","stable_key":"mh","standard":"iso639_1"}
+{"code":"mi","name":"Māori","normalized_name":"maori","stable_key":"mi","standard":"iso639_1"}
+{"code":"mic","name":"Mikmaq","normalized_name":"mikmaq","stable_key":"mic","standard":"iso639_2"}
+{"code":"min","name":"Minangkabau","normalized_name":"minangkabau","stable_key":"min","standard":"iso639_2"}
+{"code":"mk","name":"Macedonian","normalized_name":"macedonian","stable_key":"mk","standard":"iso639_1"}
+{"code":"ml","name":"Malayalam","normalized_name":"malayalam","stable_key":"ml","standard":"iso639_1"}
+{"code":"mn","name":"Mongolian","normalized_name":"mongolian","stable_key":"mn","standard":"iso639_1"}
+{"code":"mnc","name":"Manchu","normalized_name":"manchu","stable_key":"mnc","standard":"iso639_2"}
+{"code":"mni","name":"Manipuri (Meitei)","normalized_name":"manipuri meitei","stable_key":"mni","standard":"iso639_2"}
+{"code":"moh","name":"Mohawk","normalized_name":"mohawk","stable_key":"moh","standard":"iso639_2"}
+{"code":"mos","name":"Mossi","normalized_name":"mossi","stable_key":"mos","standard":"iso639_2"}
+{"code":"mr","name":"Marathi","normalized_name":"marathi","stable_key":"mr","standard":"iso639_1"}
+{"code":"ms","name":"Malay","normalized_name":"malay","stable_key":"ms","standard":"iso639_1"}
+{"code":"mt","name":"Maltese","normalized_name":"maltese","stable_key":"mt","standard":"iso639_1"}
+{"code":"mus","name":"Creek","normalized_name":"creek","stable_key":"mus","standard":"iso639_2"}
+{"code":"mwl","name":"Mirandese","normalized_name":"mirandese","stable_key":"mwl","standard":"iso639_2"}
+{"code":"mwr","name":"Marwari","normalized_name":"marwari","stable_key":"mwr","standard":"iso639_2"}
+{"code":"my","name":"Burmese","normalized_name":"burmese","stable_key":"my","standard":"iso639_1"}
+{"code":"myv","name":"Erzya","normalized_name":"erzya","stable_key":"myv","standard":"iso639_2"}
+{"code":"na","name":"Nauru","normalized_name":"nauru","stable_key":"na","standard":"iso639_1"}
+{"code":"nan","name":"Min Nan Chinese","normalized_name":"min nan chinese","stable_key":"nan","standard":"iso639_2"}
+{"code":"nap","name":"Neapolitan","normalized_name":"neapolitan","stable_key":"nap","standard":"iso639_2"}
+{"code":"nb","name":"Norwegian Bokmål","normalized_name":"norwegian bokmal","stable_key":"nb","standard":"iso639_1"}
+{"code":"nd","name":"Northern Ndebele","normalized_name":"northern ndebele","stable_key":"nd","standard":"iso639_1"}
+{"code":"ne","name":"Nepali","normalized_name":"nepali","stable_key":"ne","standard":"iso639_1"}
+{"code":"ng","name":"Ndonga","normalized_name":"ndonga","stable_key":"ng","standard":"iso639_1"}
+{"code":"nia","name":"Nias","normalized_name":"nias","stable_key":"nia","standard":"iso639_2"}
+{"code":"niu","name":"Niuean","normalized_name":"niuean","stable_key":"niu","standard":"iso639_2"}
+{"code":"nl","name":"Dutch","normalized_name":"dutch","stable_key":"nl","standard":"iso639_1"}
+{"code":"nn","name":"Norwegian Nynorsk","normalized_name":"norwegian nynorsk","stable_key":"nn","standard":"iso639_1"}
+{"code":"no","name":"Norwegian","normalized_name":"norwegian","stable_key":"no","standard":"iso639_1"}
+{"code":"nog","name":"Nogai","normalized_name":"nogai","stable_key":"nog","standard":"iso639_2"}
+{"code":"non","name":"Old Norse","normalized_name":"old norse","stable_key":"non","standard":"iso639_2"}
+{"code":"nqo","name":"NKo","normalized_name":"nko","stable_key":"nqo","standard":"iso639_2"}
+{"code":"nr","name":"Southern Ndebele","normalized_name":"southern ndebele","stable_key":"nr","standard":"iso639_1"}
+{"code":"nso","name":"Northern Sotho","normalized_name":"northern sotho","stable_key":"nso","standard":"iso639_2"}
+{"code":"nv","name":"Navajo","normalized_name":"navajo","stable_key":"nv","standard":"iso639_1"}
+{"code":"nwc","name":"Classical Newari","normalized_name":"classical newari","stable_key":"nwc","standard":"iso639_2"}
+{"code":"ny","name":"Chichewa","normalized_name":"chichewa","stable_key":"ny","standard":"iso639_1"}
+{"code":"nym","name":"Nyamwezi","normalized_name":"nyamwezi","stable_key":"nym","standard":"iso639_2"}
+{"code":"nyn","name":"Nyankole","normalized_name":"nyankole","stable_key":"nyn","standard":"iso639_2"}
+{"code":"nyo","name":"Nyoro","normalized_name":"nyoro","stable_key":"nyo","standard":"iso639_2"}
+{"code":"nzi","name":"Nzima","normalized_name":"nzima","stable_key":"nzi","standard":"iso639_2"}
+{"code":"oc","name":"Occitan","normalized_name":"occitan","stable_key":"oc","standard":"iso639_1"}
+{"code":"oj","name":"Ojibwe","normalized_name":"ojibwe","stable_key":"oj","standard":"iso639_1"}
+{"code":"om","name":"Oromo","normalized_name":"oromo","stable_key":"om","standard":"iso639_1"}
+{"code":"or","name":"Odia","normalized_name":"odia","stable_key":"or","standard":"iso639_1"}
+{"code":"os","name":"Ossetian","normalized_name":"ossetian","stable_key":"os","standard":"iso639_1"}
+{"code":"osa","name":"Osage","normalized_name":"osage","stable_key":"osa","standard":"iso639_2"}
+{"code":"ota","name":"Ottoman Turkish","normalized_name":"ottoman turkish","stable_key":"ota","standard":"iso639_2"}
+{"code":"pa","name":"Punjabi","normalized_name":"punjabi","stable_key":"pa","standard":"iso639_1"}
+{"code":"pag","name":"Pangasinan","normalized_name":"pangasinan","stable_key":"pag","standard":"iso639_2"}
+{"code":"pal","name":"Pahlavi","normalized_name":"pahlavi","stable_key":"pal","standard":"iso639_2"}
+{"code":"pam","name":"Kapampangan","normalized_name":"kapampangan","stable_key":"pam","standard":"iso639_2"}
+{"code":"pap","name":"Papiamento","normalized_name":"papiamento","stable_key":"pap","standard":"iso639_2"}
+{"code":"pau","name":"Palauan","normalized_name":"palauan","stable_key":"pau","standard":"iso639_2"}
+{"code":"peo","name":"Old Persian","normalized_name":"old persian","stable_key":"peo","standard":"iso639_2"}
+{"code":"phn","name":"Phoenician","normalized_name":"phoenician","stable_key":"phn","standard":"iso639_2"}
+{"code":"pi","name":"Pāli","normalized_name":"pali","stable_key":"pi","standard":"iso639_1"}
+{"code":"pl","name":"Polish","normalized_name":"polish","stable_key":"pl","standard":"iso639_1"}
+{"code":"pon","name":"Pohnpeian","normalized_name":"pohnpeian","stable_key":"pon","standard":"iso639_2"}
+{"code":"pro","name":"Old Provencal","normalized_name":"old provencal","stable_key":"pro","standard":"iso639_2"}
+{"code":"ps","name":"Pashto","normalized_name":"pashto","stable_key":"ps","standard":"iso639_1"}
+{"code":"pt","name":"Portuguese","normalized_name":"portuguese","stable_key":"pt","standard":"iso639_1"}
+{"code":"qu","name":"Quechua","normalized_name":"quechua","stable_key":"qu","standard":"iso639_1"}
+{"code":"raj","name":"Rajasthani","normalized_name":"rajasthani","stable_key":"raj","standard":"iso639_2"}
+{"code":"rap","name":"Rapanui","normalized_name":"rapanui","stable_key":"rap","standard":"iso639_2"}
+{"code":"rar","name":"Rarotongan","normalized_name":"rarotongan","stable_key":"rar","standard":"iso639_2"}
+{"code":"rm","name":"Romansh","normalized_name":"romansh","stable_key":"rm","standard":"iso639_1"}
+{"code":"rn","name":"Kirundi","normalized_name":"kirundi","stable_key":"rn","standard":"iso639_1"}
+{"code":"ro","name":"Romanian","normalized_name":"romanian","stable_key":"ro","standard":"iso639_1"}
+{"code":"rom","name":"Romany","normalized_name":"romany","stable_key":"rom","standard":"iso639_2"}
+{"code":"ru","name":"Russian","normalized_name":"russian","stable_key":"ru","standard":"iso639_1"}
+{"code":"rup","name":"Aromanian","normalized_name":"aromanian","stable_key":"rup","standard":"iso639_2"}
+{"code":"rw","name":"Kinyarwanda","normalized_name":"kinyarwanda","stable_key":"rw","standard":"iso639_1"}
+{"code":"sa","name":"Sanskrit","normalized_name":"sanskrit","stable_key":"sa","standard":"iso639_1"}
+{"code":"sad","name":"Sandawe","normalized_name":"sandawe","stable_key":"sad","standard":"iso639_2"}
+{"code":"sah","name":"Sakha (Yakut)","normalized_name":"sakha yakut","stable_key":"sah","standard":"iso639_2"}
+{"code":"sas","name":"Sasak","normalized_name":"sasak","stable_key":"sas","standard":"iso639_2"}
+{"code":"sat","name":"Santali","normalized_name":"santali","stable_key":"sat","standard":"iso639_2"}
+{"code":"sc","name":"Sardinian","normalized_name":"sardinian","stable_key":"sc","standard":"iso639_1"}
+{"code":"scn","name":"Sicilian","normalized_name":"sicilian","stable_key":"scn","standard":"iso639_2"}
+{"code":"sco","name":"Scots","normalized_name":"scots","stable_key":"sco","standard":"iso639_2"}
+{"code":"sd","name":"Sindhi","normalized_name":"sindhi","stable_key":"sd","standard":"iso639_1"}
+{"code":"se","name":"Northern Sami","normalized_name":"northern sami","stable_key":"se","standard":"iso639_1"}
+{"code":"sel","name":"Selkup","normalized_name":"selkup","stable_key":"sel","standard":"iso639_2"}
+{"code":"sg","name":"Sango","normalized_name":"sango","stable_key":"sg","standard":"iso639_1"}
+{"code":"shn","name":"Shan","normalized_name":"shan","stable_key":"shn","standard":"iso639_2"}
+{"code":"si","name":"Sinhala","normalized_name":"sinhala","stable_key":"si","standard":"iso639_1"}
+{"code":"sid","name":"Sidamo","normalized_name":"sidamo","stable_key":"sid","standard":"iso639_2"}
+{"code":"sk","name":"Slovak","normalized_name":"slovak","stable_key":"sk","standard":"iso639_1"}
+{"code":"sl","name":"Slovenian","normalized_name":"slovenian","stable_key":"sl","standard":"iso639_1"}
+{"code":"sm","name":"Samoan","normalized_name":"samoan","stable_key":"sm","standard":"iso639_1"}
+{"code":"sma","name":"Southern Sami","normalized_name":"southern sami","stable_key":"sma","standard":"iso639_2"}
+{"code":"smj","name":"Lule Sami","normalized_name":"lule sami","stable_key":"smj","standard":"iso639_2"}
+{"code":"smn","name":"Inari Sami","normalized_name":"inari sami","stable_key":"smn","standard":"iso639_2"}
+{"code":"sms","name":"Skolt Sami","normalized_name":"skolt sami","stable_key":"sms","standard":"iso639_2"}
+{"code":"sn","name":"Shona","normalized_name":"shona","stable_key":"sn","standard":"iso639_1"}
+{"code":"snk","name":"Soninke","normalized_name":"soninke","stable_key":"snk","standard":"iso639_2"}
+{"code":"so","name":"Somali","normalized_name":"somali","stable_key":"so","standard":"iso639_1"}
+{"code":"sog","name":"Sogdian","normalized_name":"sogdian","stable_key":"sog","standard":"iso639_2"}
+{"code":"sq","name":"Albanian","normalized_name":"albanian","stable_key":"sq","standard":"iso639_1"}
+{"code":"sr","name":"Serbian","normalized_name":"serbian","stable_key":"sr","standard":"iso639_1"}
+{"code":"srn","name":"Sranan Tongo","normalized_name":"sranan tongo","stable_key":"srn","standard":"iso639_2"}
+{"code":"srr","name":"Serer","normalized_name":"serer","stable_key":"srr","standard":"iso639_2"}
+{"code":"ss","name":"Swati","normalized_name":"swati","stable_key":"ss","standard":"iso639_1"}
+{"code":"st","name":"Southern Sotho","normalized_name":"southern sotho","stable_key":"st","standard":"iso639_1"}
+{"code":"su","name":"Sundanese","normalized_name":"sundanese","stable_key":"su","standard":"iso639_1"}
+{"code":"suk","name":"Sukuma","normalized_name":"sukuma","stable_key":"suk","standard":"iso639_2"}
+{"code":"sus","name":"Susu","normalized_name":"susu","stable_key":"sus","standard":"iso639_2"}
+{"code":"sv","name":"Swedish","normalized_name":"swedish","stable_key":"sv","standard":"iso639_1"}
+{"code":"sw","name":"Swahili","normalized_name":"swahili","stable_key":"sw","standard":"iso639_1"}
+{"code":"syc","name":"Classical Syriac","normalized_name":"classical syriac","stable_key":"syc","standard":"iso639_2"}
+{"code":"syr","name":"Syriac","normalized_name":"syriac","stable_key":"syr","standard":"iso639_2"}
+{"code":"ta","name":"Tamil","normalized_name":"tamil","stable_key":"ta","standard":"iso639_1"}
+{"code":"tcy","name":"Tulu","normalized_name":"tulu","stable_key":"tcy","standard":"iso639_2"}
+{"code":"te","name":"Telugu","normalized_name":"telugu","stable_key":"te","standard":"iso639_1"}
+{"code":"tem","name":"Timne","normalized_name":"timne","stable_key":"tem","standard":"iso639_2"}
+{"code":"ter","name":"Tereno","normalized_name":"tereno","stable_key":"ter","standard":"iso639_2"}
+{"code":"tet","name":"Tetum","normalized_name":"tetum","stable_key":"tet","standard":"iso639_2"}
+{"code":"tg","name":"Tajik","normalized_name":"tajik","stable_key":"tg","standard":"iso639_1"}
+{"code":"th","name":"Thai","normalized_name":"thai","stable_key":"th","standard":"iso639_1"}
+{"code":"ti","name":"Tigrinya","normalized_name":"tigrinya","stable_key":"ti","standard":"iso639_1"}
+{"code":"tig","name":"Tigre","normalized_name":"tigre","stable_key":"tig","standard":"iso639_2"}
+{"code":"tiv","name":"Tiv","normalized_name":"tiv","stable_key":"tiv","standard":"iso639_2"}
+{"code":"tk","name":"Turkmen","normalized_name":"turkmen","stable_key":"tk","standard":"iso639_1"}
+{"code":"tkl","name":"Tokelau","normalized_name":"tokelau","stable_key":"tkl","standard":"iso639_2"}
+{"code":"tl","name":"Tagalog","normalized_name":"tagalog","stable_key":"tl","standard":"iso639_1"}
+{"code":"tli","name":"Tlingit","normalized_name":"tlingit","stable_key":"tli","standard":"iso639_2"}
+{"code":"tmh","name":"Tamashek","normalized_name":"tamashek","stable_key":"tmh","standard":"iso639_2"}
+{"code":"tn","name":"Tswana","normalized_name":"tswana","stable_key":"tn","standard":"iso639_1"}
+{"code":"to","name":"Tonga","normalized_name":"tonga","stable_key":"to","standard":"iso639_1"}
+{"code":"tog","name":"Tonga (Nyasa)","normalized_name":"tonga nyasa","stable_key":"tog","standard":"iso639_2"}
+{"code":"tpi","name":"Tok Pisin","normalized_name":"tok pisin","stable_key":"tpi","standard":"iso639_2"}
+{"code":"tr","name":"Turkish","normalized_name":"turkish","stable_key":"tr","standard":"iso639_1"}
+{"code":"ts","name":"Tsonga","normalized_name":"tsonga","stable_key":"ts","standard":"iso639_1"}
+{"code":"tsi","name":"Tsimshian","normalized_name":"tsimshian","stable_key":"tsi","standard":"iso639_2"}
+{"code":"tt","name":"Tatar","normalized_name":"tatar","stable_key":"tt","standard":"iso639_1"}
+{"code":"tum","name":"Tumbuka","normalized_name":"tumbuka","stable_key":"tum","standard":"iso639_2"}
+{"code":"tvl","name":"Tuvalu","normalized_name":"tuvalu","stable_key":"tvl","standard":"iso639_2"}
+{"code":"tw","name":"Twi","normalized_name":"twi","stable_key":"tw","standard":"iso639_1"}
+{"code":"ty","name":"Tahitian","normalized_name":"tahitian","stable_key":"ty","standard":"iso639_1"}
+{"code":"tyv","name":"Tuvinian","normalized_name":"tuvinian","stable_key":"tyv","standard":"iso639_2"}
+{"code":"udm","name":"Udmurt","normalized_name":"udmurt","stable_key":"udm","standard":"iso639_2"}
+{"code":"ug","name":"Uyghur","normalized_name":"uyghur","stable_key":"ug","standard":"iso639_1"}
+{"code":"uga","name":"Ugaritic","normalized_name":"ugaritic","stable_key":"uga","standard":"iso639_2"}
+{"code":"uk","name":"Ukrainian","normalized_name":"ukrainian","stable_key":"uk","standard":"iso639_1"}
+{"code":"umb","name":"Umbundu","normalized_name":"umbundu","stable_key":"umb","standard":"iso639_2"}
+{"code":"ur","name":"Urdu","normalized_name":"urdu","stable_key":"ur","standard":"iso639_1"}
+{"code":"uz","name":"Uzbek","normalized_name":"uzbek","stable_key":"uz","standard":"iso639_1"}
+{"code":"vai","name":"Vai","normalized_name":"vai","stable_key":"vai","standard":"iso639_2"}
+{"code":"ve","name":"Venda","normalized_name":"venda","stable_key":"ve","standard":"iso639_1"}
+{"code":"vi","name":"Vietnamese","normalized_name":"vietnamese","stable_key":"vi","standard":"iso639_1"}
+{"code":"vo","name":"Volapük","normalized_name":"volapuk","stable_key":"vo","standard":"iso639_1"}
+{"code":"vot","name":"Votic","normalized_name":"votic","stable_key":"vot","standard":"iso639_2"}
+{"code":"wa","name":"Walloon","normalized_name":"walloon","stable_key":"wa","standard":"iso639_1"}
+{"code":"wal","name":"Wolaitta","normalized_name":"wolaitta","stable_key":"wal","standard":"iso639_2"}
+{"code":"war","name":"Waray","normalized_name":"waray","stable_key":"war","standard":"iso639_2"}
+{"code":"was","name":"Washo","normalized_name":"washo","stable_key":"was","standard":"iso639_2"}
+{"code":"wo","name":"Wolof","normalized_name":"wolof","stable_key":"wo","standard":"iso639_1"}
+{"code":"wuu","name":"Wu Chinese","normalized_name":"wu chinese","stable_key":"wuu","standard":"iso639_2"}
+{"code":"xal","name":"Kalmyk","normalized_name":"kalmyk","stable_key":"xal","standard":"iso639_2"}
+{"code":"xh","name":"Xhosa","normalized_name":"xhosa","stable_key":"xh","standard":"iso639_1"}
+{"code":"yao","name":"Yao","normalized_name":"yao","stable_key":"yao","standard":"iso639_2"}
+{"code":"yap","name":"Yapese","normalized_name":"yapese","stable_key":"yap","standard":"iso639_2"}
+{"code":"yi","name":"Yiddish","normalized_name":"yiddish","stable_key":"yi","standard":"iso639_1"}
+{"code":"yo","name":"Yoruba","normalized_name":"yoruba","stable_key":"yo","standard":"iso639_1"}
+{"code":"yue","name":"Cantonese","normalized_name":"cantonese","stable_key":"yue","standard":"iso639_2"}
+{"code":"za","name":"Zhuang","normalized_name":"zhuang","stable_key":"za","standard":"iso639_1"}
+{"code":"zap","name":"Zapotec","normalized_name":"zapotec","stable_key":"zap","standard":"iso639_2"}
+{"code":"zen","name":"Zenaga","normalized_name":"zenaga","stable_key":"zen","standard":"iso639_2"}
+{"code":"zgh","name":"Standard Moroccan Tamazight","normalized_name":"standard moroccan tamazight","stable_key":"zgh","standard":"iso639_2"}
+{"code":"zh","name":"Chinese","normalized_name":"chinese","stable_key":"zh","standard":"iso639_1"}
+{"code":"zu","name":"Zulu","normalized_name":"zulu","stable_key":"zu","standard":"iso639_1"}
+{"code":"zun","name":"Zuni","normalized_name":"zuni","stable_key":"zun","standard":"iso639_2"}
+{"code":"zza","name":"Zaza","normalized_name":"zaza","stable_key":"zza","standard":"iso639_2"}
