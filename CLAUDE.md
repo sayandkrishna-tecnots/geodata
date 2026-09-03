@@ -60,7 +60,9 @@ the output differs from what is committed. Don't hand-edit `data/canonical/`.
   upstream's `level` disagrees with the tree for ~1,000 states.
 - `scripts/lib/normalize.py` and `src/geodata/normalize.py` must stay
   byte-identical; a test enforces it. The build computes stable keys with one
-  and the API matches with the other.
+  and the API matches with the other. `packages/js/src/normalize.ts` is a third
+  implementation that cannot be byte-identical, so it is pinned by fixture
+  instead — see the npm section below.
 
 ## Testing
 
@@ -106,7 +108,15 @@ Three things about its shape are load-bearing, not stylistic:
    component that only built a *state* dropdown still emitted 48 MB of city
    chunks. That is why city loading lives behind `geodata-js/lazy` rather than
    merely being tree-shakeable.
-3. **`src/normalize.ts` must reproduce `scripts/lib/normalize.py` exactly.** It
+3. **`make js` is the real gate, not `npm test`.** It also runs publint,
+   `arethetypeswrong` across all four consumer resolution modes, and
+   `scripts/smoke.sh`, which installs the packed tarball into a clean directory
+   and imports it. That last one is the only check that exercises the
+   *published artifact* — the suite runs against `src/`, where the exports map,
+   the `files` allowlist and the ignore rules are all bypassed. Those are
+   exactly the things that fail silently: an earlier tarball here contained two
+   licences and no code.
+4. **`src/normalize.ts` must reproduce `scripts/lib/normalize.py` exactly.** It
    is half of every stable key. The Unicode tables it needs are generated from
    the same CPython that computed every `normalized_name`, and a test re-folds
    all 158,976 dataset names through the TypeScript implementation.
