@@ -19,11 +19,11 @@
   "author": "geodata contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sayankrishna-tecnots/geodata.git",
+    "url": "git+https://github.com/sayandkrishna-tecnots/geodata.git",
     "directory": "packages/js"
   },
-  "homepage": "https://github.com/sayankrishna-tecnots/geodata/tree/main/packages/js#readme",
-  "bugs": "https://github.com/sayankrishna-tecnots/geodata/issues",
+  "homepage": "https://github.com/sayandkrishna-tecnots/geodata/tree/main/packages/js#readme",
+  "bugs": "https://github.com/sayandkrishna-tecnots/geodata/issues",
   "type": "module",
   "sideEffects": false,
   "engines": {
