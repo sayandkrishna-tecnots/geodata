@@ -1,0 +1,63 @@
+name: js-release
+
+on:
+  push:
+    tags: ["js-v*"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Pack and verify without publishing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  id-token: write   # npm provenance
+
+defaults:
+  run:
+    working-directory: packages/js
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+          cache: npm
+          cache-dependency-path: packages/js/package-lock.json
+
+      - name: Generate data modules from the pinned dataset
+        run: python3 ../../scripts/build_js.py
+
+      - name: The tag must match the package version
+        # A mismatch here means the tag and the tarball disagree about what was
+        # released, which is unrecoverable once published.
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          tag="${GITHUB_REF#refs/tags/js-v}"
+          pkg="$(node -p "require('./package.json').version")"
+          [ "$tag" = "$pkg" ] || { echo "tag js-v$tag != package.json $pkg"; exit 1; }
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm test
+      - run: npm run lint:pkg
+      - run: bash scripts/smoke.sh
+
+      - name: Publish
+        if: startsWith(github.ref, 'refs/tags/') && inputs.dry_run != true
+        run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Dry run
+        if: "!startsWith(github.ref, 'refs/tags/') || inputs.dry_run == true"
+        run: npm publish --dry-run --access public

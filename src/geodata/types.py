@@ -45,6 +45,27 @@ class Language:
 
 
 @dataclass(frozen=True)
+class Region:
+    """One of the six top-level regions (Africa, Americas, Asia, ...)."""
+
+    id: int
+    name: str
+    normalized_name: str
+    wikidata_id: Optional[str]
+
+
+@dataclass(frozen=True)
+class Subregion:
+    """A subregion within a :class:`Region`, e.g. Western Africa."""
+
+    id: int
+    name: str
+    normalized_name: str
+    region_id: int
+    wikidata_id: Optional[str]
+
+
+@dataclass(frozen=True)
 class SubdivisionLink:
     """A territory's other identity, as a subdivision of another country.
 

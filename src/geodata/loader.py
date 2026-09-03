@@ -11,7 +11,9 @@ import os
 import threading
 
 from .normalize import normalize_name
-from .types import City, Country, Language, State, SubdivisionLink, Timezone
+from .types import (
+    City, Country, Language, Region, State, Subregion, SubdivisionLink, Timezone,
+)
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 # During development the data lives in the repo; a packaged build ships it
@@ -76,6 +78,14 @@ def countries():
 
 def states():
     return _memoize("states", lambda: tuple(State(**r) for r in _read("states")))
+
+
+def regions():
+    return _memoize("regions", lambda: tuple(Region(**r) for r in _read("regions")))
+
+
+def subregions():
+    return _memoize("subregions", lambda: tuple(Subregion(**r) for r in _read("subregions")))
 
 
 def cities():

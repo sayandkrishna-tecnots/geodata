@@ -1,0 +1,22 @@
+# This file exists to be found, not to match much.
+#
+# When a package has no .npmignore, npm falls back to .gitignore -- and the
+# repo root ignores packages/js/dist/, because dist is a build artifact that
+# should never be committed. The result is a tarball containing the licences
+# and nothing else, even though package.json's `files` allowlist names `dist`.
+# The failure is silent: `npm publish` succeeds and every consumer gets an
+# empty package.
+#
+# The presence of this file stops the .gitignore fallback. `files` in
+# package.json is the real allowlist; the entries below are belt-and-braces for
+# anyone who removes it.
+
+src/
+test/
+scripts/
+tsconfig.json
+tsconfig.cjs.json
+vitest.config.ts
+*.tgz
+node_modules/
+.DS_Store

@@ -23,6 +23,7 @@ from .exceptions import (
     CityNotFound,
     CountryNotFound,
     LanguageNotFound,
+    NotFound,
     StateNotFound,
 )
 from .types import City, Country, Language, State, StateNode
@@ -38,6 +39,7 @@ except ImportError:  # pragma: no cover
 
 __all__ = [
     "countries", "get_country", "find_country",
+    "regions", "subregions",
     "states_of", "get_state", "state_tree", "root_states", "substates_of",
     "cities_of", "get_city", "search_cities",
     "subdivision_twin",
@@ -99,6 +101,37 @@ def find_country(key) -> Optional[Country]:
         return idx["numeric"].get(text.lstrip("0") or "0") or idx["id"].get(int(text))
     normalized = normalize_name(text)
     return idx["name"].get(normalized) or idx["native"].get(normalized)
+
+
+
+def regions():
+    """The six top-level regions, sorted by name.
+
+    `Country.region` already carries the region *name*, so this table is only
+    needed for the ids and wikidata links -- or to build a region picker.
+    """
+    return tuple(sorted(loader.regions(), key=lambda r: r.name))
+
+
+def subregions(region=None):
+    """Subregions, optionally within one region. Sorted by name.
+
+    `region` accepts a :class:`Region`, its id, or its name.
+    """
+    rows = loader.subregions()
+    if region is not None:
+        if hasattr(region, "id"):
+            region_id = region.id
+        elif isinstance(region, int):
+            region_id = region
+        else:
+            wanted = normalize_name(region)
+            match = [r for r in loader.regions() if r.normalized_name == wanted]
+            if not match:
+                raise NotFound("no region named {0!r}".format(region))
+            region_id = match[0].id
+        rows = [s for s in rows if s.region_id == region_id]
+    return tuple(sorted(rows, key=lambda s: s.name))
 
 
 # --------------------------------------------------------------------- states

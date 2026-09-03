@@ -1,0 +1,88 @@
+name: js
+
+on:
+  push:
+    branches: [main]
+    paths: ["packages/js/**", "scripts/build_js.py", "scripts/lib/**", "data/canonical/**", "schema/**", ".github/workflows/js.yml"]
+  pull_request:
+    paths: ["packages/js/**", "scripts/build_js.py", "scripts/lib/**", "data/canonical/**", "schema/**", ".github/workflows/js.yml"]
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: packages/js
+
+jobs:
+  generated-is-current:
+    # The contents of packages/js/src/{data,country} are generated from
+    # data/canonical and are gitignored, so nothing else would notice if the
+    # generator and the data drifted apart. Regenerating and diffing is the
+    # only check that the published package matches the committed dataset.
+    name: generated sources match the dataset
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Generate
+        run: python3 ../../scripts/build_js.py
+      - name: Regenerate and diff
+        run: |
+          find src/data src/country -type f | sort > /tmp/first.txt
+          md5sum $(cat /tmp/first.txt) | sort > /tmp/first.md5
+          python3 ../../scripts/build_js.py
+          find src/data src/country -type f | sort > /tmp/second.txt
+          md5sum $(cat /tmp/second.txt) | sort > /tmp/second.md5
+          diff /tmp/first.txt /tmp/second.txt
+          diff /tmp/first.md5 /tmp/second.md5
+          echo "generator is deterministic"
+
+  test:
+    name: node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["18", "20", "22", "24"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+          cache-dependency-path: packages/js/package-lock.json
+      - run: python3 ../../scripts/build_js.py
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm test
+      - name: Package linters
+        # publint checks the exports map; attw checks that every consumer
+        # resolution mode gets real types rather than an implicit `any`.
+        run: npm run lint:pkg
+      - name: Install from the tarball and use it
+        run: bash scripts/smoke.sh
+
+  conformance:
+    # The JS half runs in `test` above. This runs the Python half against the
+    # same cases.json, so a disagreement between the two SDKs fails here.
+    name: python conformance
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pytest
+      - name: Conformance corpus is current
+        run: |
+          python3 scripts/build_conformance.py
+          git diff --exit-code tests/conformance/cases.json
+      - run: python3 -m pytest tests/ -q

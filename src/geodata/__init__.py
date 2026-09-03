@@ -13,6 +13,8 @@ Two things to know before using this:
 """
 
 from .api import (
+    regions,
+    subregions,
     cities_of,
     countries,
     find_country,
@@ -31,6 +33,9 @@ from .api import (
     substates_of,
     translations_of,
 )
+from ._version import (  # noqa: F401
+    COUNTS, DATASET_VERSION, SOURCE_REPO, SOURCE_TAG, __version__,
+)
 from .exceptions import (
     Ambiguous,
     CityNotFound,
@@ -40,7 +45,15 @@ from .exceptions import (
     NotFound,
     StateNotFound,
 )
+# The fold is public API: a consumer building its own index -- a search box, a
+# join against another dataset -- must key it exactly the way `stable_key` was
+# computed, or the two will silently fail to match. `geodata-js` exports the
+# same three from its root entry, and a shared fixture pins them together.
+from .normalize import normalize_key, normalize_name, slugify
+
 from .types import (
+    Region,
+    Subregion,
     City,
     Country,
     Language,
@@ -51,6 +64,14 @@ from .types import (
 )
 
 __all__ = [
+    "normalize_name",
+    "normalize_key",
+    "slugify",
+    "__version__", "DATASET_VERSION", "SOURCE_TAG", "SOURCE_REPO", "COUNTS",
+    "regions",
+    "subregions",
+    "Region",
+    "Subregion",
     "countries", "get_country", "find_country",
     "states_of", "get_state", "state_tree", "root_states", "substates_of",
     "cities_of", "get_city", "search_cities", "subdivision_twin",

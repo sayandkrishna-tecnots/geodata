@@ -1,0 +1,165 @@
+{
+  "name": "geodata-js",
+  "version": "2026.9.0",
+  "description": "250 countries, 5,308 subdivisions, 152,970 cities and 420 ISO 639 languages, validated and versioned. Zero dependencies. Works in Node, Next.js, Vite, Bun, Deno and React Native.",
+  "keywords": [
+    "countries",
+    "states",
+    "provinces",
+    "cities",
+    "iso-3166",
+    "iso-639",
+    "geography",
+    "subdivisions",
+    "address",
+    "country-list",
+    "nextjs"
+  ],
+  "license": "MIT",
+  "author": "geodata contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/geodata.git",
+    "directory": "packages/js"
+  },
+  "homepage": "https://github.com/OWNER/geodata/tree/main/packages/js#readme",
+  "bugs": "https://github.com/OWNER/geodata/issues",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "LICENSE-DATA"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/index.d.cts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./lazy": {
+      "import": {
+        "types": "./dist/types/lazy.d.ts",
+        "default": "./dist/esm/lazy.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/lazy.d.cts",
+        "default": "./dist/cjs/lazy.js"
+      }
+    },
+    "./states": {
+      "import": {
+        "types": "./dist/types/states.d.ts",
+        "default": "./dist/esm/states.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/states.d.cts",
+        "default": "./dist/cjs/states.js"
+      }
+    },
+    "./translations": {
+      "import": {
+        "types": "./dist/types/translations.d.ts",
+        "default": "./dist/esm/translations.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/translations.d.cts",
+        "default": "./dist/cjs/translations.js"
+      }
+    },
+    "./normalize": {
+      "import": {
+        "types": "./dist/types/normalize.d.ts",
+        "default": "./dist/esm/normalize.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/normalize.d.cts",
+        "default": "./dist/cjs/normalize.js"
+      }
+    },
+    "./next": {
+      "import": {
+        "types": "./dist/types/next.d.ts",
+        "default": "./dist/esm/next.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/next.d.cts",
+        "default": "./dist/cjs/next.js"
+      }
+    },
+    "./cities": {
+      "browser": "./dist/esm/cities.browser.js",
+      "import": {
+        "types": "./dist/types/cities.d.ts",
+        "default": "./dist/esm/cities.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/cities.d.cts",
+        "default": "./dist/cjs/cities.js"
+      }
+    },
+    "./country/*": {
+      "import": {
+        "types": "./dist/types/country/*.d.ts",
+        "default": "./dist/esm/country/*.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/country/*.d.cts",
+        "default": "./dist/cjs/country/*.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "states": [
+        "./dist/types/states.d.ts"
+      ],
+      "lazy": [
+        "./dist/types/lazy.d.ts"
+      ],
+      "cities": [
+        "./dist/types/cities.d.ts"
+      ],
+      "translations": [
+        "./dist/types/translations.d.ts"
+      ],
+      "normalize": [
+        "./dist/types/normalize.d.ts"
+      ],
+      "next": [
+        "./dist/types/next.d.ts"
+      ],
+      "country/*": [
+        "./dist/types/country/*.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "generate": "python3 ../../scripts/build_js.py",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint:pkg": "publint && attw --pack .",
+    "prepublishOnly": "npm run build && npm run test && npm run lint:pkg"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "esbuild": "^0.25.0",
+    "publint": "^0.3.5",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
