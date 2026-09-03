@@ -152,7 +152,7 @@
     "build": "node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "lint:pkg": "publint && attw --pack .",
+    "lint:pkg": "node scripts/lint-pkg.mjs",
     "prepublishOnly": "npm run build && npm run test && npm run lint:pkg"
   },
   "devDependencies": {
