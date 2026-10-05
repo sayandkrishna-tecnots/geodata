@@ -1,0 +1,16 @@
+[  ok] 1. zero orphan foreign keys                  cross_country_state=0, orphan_city_country=0, orphan_city_state=0, orphan_states=0
+[  ok] 2. schema conformance                        rows_checked=159318
+[  ok] 3. uniqueness of identities                  city_id=0, city_stable_key=0, country_id=0, country_iso2=0, country_iso3=0, country_numeric=0, country_stable_key=0, state_id=0, state_iso3166_2=0, state_stable_key=0
+[warn] 4. coordinate sanity                         bounds_countries=167, cities_outside_bbox=2, states_without_coords=3
+        warn  PR: 2 cities >500 km outside the country bbox; farthest is Isabela (id 153585) at 16.9753758,121.8107079 -- 16050 km
+[warn] 5. parent_id resolves, acyclic               cycles=0, level_vs_depth_mismatch=996, max_depth=3, roots=4043
+        warn  996 states where upstream `level` != computed `depth` (advisory field); top: UG=135, PH=82, CZ=76, PR=68, MA=63
+[  ok] 6. counts within tolerance                   cities=153312, countries=250, states=5308
+[  ok] 7. encoding hygiene                          
+[  ok] 8. has_states / has_cities agree             countries_without_cities=27, countries_without_states=21
+[warn] 9. languages + translation locales           languages=420, locales=28
+        warn  394 of 420 languages are not used by any translation -- the table is a reference list, not a manifest of what we translate
+[warn] overrides: retired?                          
+        warn  override states#2424 is retired -- upstream now agrees on parent_id
+
+PASSED: 0 failures, 4 warnings
