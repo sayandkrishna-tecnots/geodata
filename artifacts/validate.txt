@@ -1,0 +1,21 @@
+[  ok] 1. zero orphan foreign keys                  cross_country_state=0, orphan_city_country=0, orphan_city_state=0, orphan_states=0
+[  ok] 2. schema conformance                        rows_checked=158178
+[  ok] 3. uniqueness of identities                  city_id=0, city_stable_key=0, country_id=0, country_iso2=0, country_iso3=0, country_numeric=0, country_stable_key=0, state_id=0, state_iso3166_2=0, state_stable_key=0
+[  ok] 4. coordinate sanity                         bounds_countries=167, cities_outside_bbox=0, states_without_coords=4
+[warn] 5. parent_id resolves, acyclic               cycles=0, level_vs_depth_mismatch=264, max_depth=2, roots=3938
+        warn  264 states where upstream `level` != computed `depth` (advisory field); top: UG=135, MW=28, IE=26, GU=19, AI=14
+[FAIL] 6. counts within tolerance                   cities=152152, countries=250, states=5328
+        FAIL  cities/AR: 1136 -> 1022 (10.0% removal, limit 10.0%)
+        FAIL  cities/HU: 1074 -> 909 (15.4% removal, limit 10.0%)
+        FAIL  cities/JP: 1655 -> 1235 (25.4% removal, limit 10.0%)
+        FAIL  cities/PH: 5357 -> 4374 (18.3% removal, limit 10.0%)
+        FAIL  cities/TH: 1241 -> 1012 (18.5% removal, limit 10.0%)
+        FAIL  re-run with --accept-churn '<written justification>' once the churn report has been reviewed (Decision 6)
+[  ok] 7. encoding hygiene                          
+[  ok] 8. has_states / has_cities agree             countries_without_cities=27, countries_without_states=21
+[warn] 9. languages + translation locales           languages=420, locales=29
+        warn  393 of 420 languages are not used by any translation -- the table is a reference list, not a manifest of what we translate
+[warn] overrides: retired?                          
+        warn  override states#2424 is retired -- upstream now agrees on parent_id
+
+FAILED: 6 failures, 3 warnings
