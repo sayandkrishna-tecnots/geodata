@@ -1,20 +1,20 @@
 {
-  "fetched_at": "2026-09-03T06:27:07Z",
+  "fetched_at": "2026-10-26T12:32:55Z",
   "files": {
     "combined": {
-      "bytes": 46526667,
+      "bytes": 52777919,
       "path": "json/countries+states+cities.json",
-      "sha256": "2e80c75126ca20a53c1ecd6e8ddc0b42c452ee5f11aa737fc12788534ec8e4be"
+      "sha256": "bd1c870ead57b90a9050d1c58de52949115c1d7b02dd9bb8dc1574a39cf41d9a"
     },
     "countries": {
-      "bytes": 506767,
+      "bytes": 506768,
       "path": "json/countries.json",
-      "sha256": "b93a99bc384bcc958de3b8ea9434a0ab34520ce6ae4e330953677ce9817e7dd5"
+      "sha256": "a12d03080595c22d4477ddc64383b7f795c156be3571bb3ebf969df9bbf75684"
     },
     "country_bounds": {
-      "bytes": 18256,
+      "bytes": 24392,
       "path": ".github/data/country-bounds.json",
-      "sha256": "ba18c045a237cc65a187af24afbd06c2995fc842e4abb09053e2bb336fd0d014"
+      "sha256": "f474084f747a3d846923283d3d4232b6d6424a3890f7979331e2e81d2bf4efe5"
     },
     "regions": {
       "bytes": 3938,
@@ -22,9 +22,9 @@
       "sha256": "62031692a5c6a32d67f4c76313990519b43410c61b91b533fbd67f897c022734"
     },
     "states": {
-      "bytes": 6477910,
+      "bytes": 6638758,
       "path": "json/states.json",
-      "sha256": "f2389263a1706f405755b728f16747963f179a594ca9559d6f216cfe4b04b2f3"
+      "sha256": "0571a4c91a073f648e4162074aa5bc87b7bcb0d92fb8a3839a14a0067a2b3de6"
     },
     "subregions": {
       "bytes": 15905,
@@ -33,6 +33,6 @@
     }
   },
   "repo": "dr5hn/countries-states-cities-database",
-  "tag": "v3.2-export.7",
-  "url": "https://github.com/dr5hn/countries-states-cities-database/releases/tag/v3.2-export.7"
+  "tag": "v5.0.0-export.1",
+  "url": "https://github.com/dr5hn/countries-states-cities-database/releases/tag/v5.0.0-export.1"
 }
